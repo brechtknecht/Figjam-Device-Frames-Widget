@@ -27,12 +27,15 @@ import DeviceDesktop32 from './components/icons/DeviceDesktop32'
 import None16 from './components/icons/None16'
 import Check16 from './components/icons/Check16'
 
-function Plugin (props: { type: string, title: string }) {
+function Plugin (props: { type: string, title: string, deviceType: string, device: string, backgroundEnabled: string, deviceBorderEnabled: string }) {
   const [type, setType]     = useState(props.type)
   const [title, setTitle]   = useState(props.title)
 
+  const [deviceType, setDeviceType] = useState(props.deviceType)
+  const [device, setCurrentDevice] = useState(props.device)
 
-  const [deviceType, setDeviceType] = useState('Mobile')
+  const [backgroundEnabled, setBackgroundEnabled] = useState(props.backgroundEnabled)
+  const [deviceBorderEnabled, setDeviceBorderEnabled] = useState(props.deviceBorderEnabled)
 
   const deviceOptions: Array<DropdownOption> = [
     { value: 'Mobile' },
@@ -40,12 +43,9 @@ function Plugin (props: { type: string, title: string }) {
     { value: 'Desktop' },
   ]
 
-  const [backgroundEnabled, setBackgroundEnabled] = useState('noBackground')
-  const [deviceBorderEnabled, setDeviceBorderEnabled] = useState('noBorder')
-
   const backgroundOptions: Array<SegmentedControlOption> = [
-    { children: <None16 />, value: 'background' },
-    { children: <DeviceMobile16 background={true} ></DeviceMobile16>, value: 'noBackground' }
+    { children: <None16 />, value: 'noBackground' },
+    { children: <DeviceMobile16 background={true} ></DeviceMobile16>, value: 'background' }
   ]
 
   const deviceBorderOptions: Array<SegmentedControlOption> = [
@@ -70,7 +70,6 @@ function Plugin (props: { type: string, title: string }) {
     console.log(newValue)
 
     
-
     if(newValue == 'Mobile') {
       setCurrentDevice('iPhone 8')
     }
@@ -86,7 +85,7 @@ function Plugin (props: { type: string, title: string }) {
     setDeviceType(newValue)
   }
 
-  const [device, setCurrentDevice] = useState('iPhone 8')
+  
 
   const mobileOptions: Array<DropdownOption> = [
     { header: 'Apple' },
@@ -115,9 +114,6 @@ function Plugin (props: { type: string, title: string }) {
   function handleMobileChange(event: h.JSX.TargetedEvent<HTMLInputElement>) {
     const newValue = event.currentTarget.value
     console.log(newValue)
-
-    
-
     setCurrentDevice(newValue)
   }
 
@@ -126,13 +122,13 @@ function Plugin (props: { type: string, title: string }) {
       emit('UPDATE_TYPE', type)
       emit('UPDATE_TITLE', title)
 
+      emit('UPDATE_DEVICETYPE', deviceType)
       emit('UPDATE_DEVICE', device)
       emit('UPDATE_BACKGROUND_ENABLED', backgroundEnabled)
       emit('UPDATE_DEVICEBORDER_ENABLED', deviceBorderEnabled)
-      emit('UPDATE_DEVICETYPE', deviceType)
-
     },
-    [type, title]
+    /* !!!! UPDATE THIS DO NOT FORGET !!!!!*/ 
+    [type, title, deviceType, device, backgroundEnabled, deviceBorderEnabled]
   )
 
   function getCurrentDeviceIcon(background: Boolean){

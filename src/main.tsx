@@ -16,7 +16,11 @@ function DeviceFrames () {
 
   const [deviceType, setDeviceType] = useSyncedState("deviceType", "Mobile")
 
-  const [backgroundEnabled, setBackgroundEnabled] = useSyncedState("backgroundEnabled", "noBackground")
+  const [backgroundEnabled, setBackgroundEnabled] = useSyncedState("backgroundEnabled", "background")
+
+  const [deviceBorderEnabled, setDeviceBorderEnabled] = useSyncedState("deviceBorderEnabled","noBorder")
+
+  const [device, setCurrentDevice] = useSyncedState("device", "iPhone 8")
 
   const items: Array<WidgetPropertyMenuItem> = [
     {
@@ -48,7 +52,8 @@ function DeviceFrames () {
   }: WidgetPropertyEvent): Promise<void> {
     await new Promise<void>(function (resolve: () => void): void {
       if (propertyName === 'edit') {
-        showUI({ width: 240, height: 300 }, { type, title })
+        showUI({ width: 240, height: 300 }, { type, title, deviceType, device, backgroundEnabled, deviceBorderEnabled })
+
         once('UPDATE_TYPE', function (type: string): void {
           setType(type); resolve();
         })
@@ -57,22 +62,22 @@ function DeviceFrames () {
           setTitle(title); resolve();
         })
 
-        once('UPDATE_DEVICETYPE', function (type: string): void {
-          setDeviceType(type); resolve();
+        once('UPDATE_DEVICETYPE', function (value: string): void {
+          console.log("NEW DEVICE TYPE: ", value)
+          setDeviceType(value); resolve();
         })
 
         once('UPDATE_BACKGROUND_ENABLED', function (value: string): void {
           setBackgroundEnabled(value); resolve();
         })
-        
-        // 
-        // 
 
-        // UPDATE_DEVICEBORDER_ENABLED
-        // const [deviceBorderEnabled, setDeviceBorderEnabled] = useState('noBorder')
+        once('UPDATE_DEVICEBORDER_ENABLED', function (value: string): void {
+          setDeviceBorderEnabled(value); resolve();
+        })
 
-        // UPDATE_DEVICE
-        // const [device, setCurrentDevice] = useState('iPhone 8')
+        once('UPDATE_DEVICE', function (value: string): void {
+          setCurrentDevice(value); resolve();
+        })
       }
     })
   }
@@ -98,7 +103,7 @@ function DeviceFrames () {
               fontWeight="bold"
               italic={false}
             >
-              { backgroundEnabled }
+              { device }
             </Text>
         </AutoLayout>
         {/* Top Bar end */}
@@ -111,7 +116,7 @@ function DeviceFrames () {
             width="fill-parent"
             horizontalAlignText="left"
           >
-            { title }
+            { deviceBorderEnabled }
           </Text>
         </AutoLayout>
         {/* Card Title end */}

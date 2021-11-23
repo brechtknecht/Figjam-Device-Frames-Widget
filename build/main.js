@@ -87,7 +87,9 @@
     const [type, setType] = useSyncedState("type", "Card Type");
     const [title, setTitle] = useSyncedState("title", "Title");
     const [deviceType, setDeviceType] = useSyncedState("deviceType", "Mobile");
-    const [backgroundEnabled, setBackgroundEnabled] = useSyncedState("backgroundEnabled", "noBackground");
+    const [backgroundEnabled, setBackgroundEnabled] = useSyncedState("backgroundEnabled", "background");
+    const [deviceBorderEnabled, setDeviceBorderEnabled] = useSyncedState("deviceBorderEnabled", "noBorder");
+    const [device, setCurrentDevice] = useSyncedState("device", "iPhone 8");
     const items = [
       {
         itemType: "action",
@@ -118,7 +120,7 @@
     }) {
       await new Promise(function(resolve) {
         if (propertyName === "edit") {
-          showUI({ width: 240, height: 300 }, { type, title });
+          showUI({ width: 240, height: 300 }, { type, title, deviceType, device, backgroundEnabled, deviceBorderEnabled });
           once("UPDATE_TYPE", function(type2) {
             setType(type2);
             resolve();
@@ -127,12 +129,21 @@
             setTitle(title2);
             resolve();
           });
-          once("UPDATE_DEVICETYPE", function(type2) {
-            setDeviceType(type2);
+          once("UPDATE_DEVICETYPE", function(value) {
+            console.log("NEW DEVICE TYPE: ", value);
+            setDeviceType(value);
             resolve();
           });
           once("UPDATE_BACKGROUND_ENABLED", function(value) {
             setBackgroundEnabled(value);
+            resolve();
+          });
+          once("UPDATE_DEVICEBORDER_ENABLED", function(value) {
+            setDeviceBorderEnabled(value);
+            resolve();
+          });
+          once("UPDATE_DEVICE", function(value) {
+            setCurrentDevice(value);
             resolve();
           });
         }
@@ -164,7 +175,7 @@
       fill: "#fff",
       fontWeight: "bold",
       italic: false
-    }, backgroundEnabled)), /* @__PURE__ */ figma.widget.h(AutoLayout, {
+    }, device)), /* @__PURE__ */ figma.widget.h(AutoLayout, {
       horizontalAlignItems: "center",
       verticalAlignItems: "center",
       padding: 22,
@@ -177,7 +188,7 @@
       height: "hug-contents",
       width: "fill-parent",
       horizontalAlignText: "left"
-    }, title))));
+    }, deviceBorderEnabled))));
   }
   var widget, AutoLayout, Text, useSyncedState, usePropertyMenu;
   var init_main = __esm({

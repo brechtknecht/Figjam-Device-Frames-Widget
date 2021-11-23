@@ -439,10 +439,10 @@
     }
   });
 
-  // ../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/cd9ea7e6-9b6e-4539-a574-0b9da8c448f5/loading-indicator.js
+  // ../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/cf94225c-0747-4db5-9252-68c01ce03859/loading-indicator.js
   var loading_indicator_default;
   var init_loading_indicator = __esm({
-    "../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/cd9ea7e6-9b6e-4539-a574-0b9da8c448f5/loading-indicator.js"() {
+    "../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/cf94225c-0747-4db5-9252-68c01ce03859/loading-indicator.js"() {
       if (document.getElementById("95dd1d81f7") === null) {
         const element = document.createElement("style");
         element.id = "95dd1d81f7";
@@ -516,10 +516,10 @@
     }
   });
 
-  // ../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/98c2b745-32d1-4d2d-aac7-f8946545a218/button.js
+  // ../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/1bfcc8b7-2380-426f-955d-623bc4cf61e4/button.js
   var button_default;
   var init_button = __esm({
-    "../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/98c2b745-32d1-4d2d-aac7-f8946545a218/button.js"() {
+    "../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/1bfcc8b7-2380-426f-955d-623bc4cf61e4/button.js"() {
       if (document.getElementById("7f57db472a") === null) {
         const element = document.createElement("style");
         element.id = "7f57db472a";
@@ -654,10 +654,10 @@
     }
   });
 
-  // ../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/c9d8e2eb-d511-465e-ae2b-0d406be6e7e8/icon.js
+  // ../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/3a07af9a-e47c-4232-9b07-4659ae7e4c2f/icon.js
   var icon_default;
   var init_icon = __esm({
-    "../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/c9d8e2eb-d511-465e-ae2b-0d406be6e7e8/icon.js"() {
+    "../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/3a07af9a-e47c-4232-9b07-4659ae7e4c2f/icon.js"() {
       if (document.getElementById("642172eea4") === null) {
         const element = document.createElement("style");
         element.id = "642172eea4";
@@ -715,10 +715,10 @@
     }
   });
 
-  // ../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/75ac6f90-cb02-4798-ac2a-a1bb15c9c5a0/divider.js
+  // ../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/ca82987c-d89b-4253-8c6e-980bbecfb0d5/divider.js
   var divider_default;
   var init_divider = __esm({
-    "../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/75ac6f90-cb02-4798-ac2a-a1bb15c9c5a0/divider.js"() {
+    "../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/ca82987c-d89b-4253-8c6e-980bbecfb0d5/divider.js"() {
       if (document.getElementById("61fb75b14e") === null) {
         const element = document.createElement("style");
         element.id = "61fb75b14e";
@@ -746,10 +746,10 @@
     }
   });
 
-  // ../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/cc508d3e-d47d-44e9-ab0c-6eb988e07de1/menu.js
+  // ../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/9d570300-b820-4d86-bb8b-70f7aa23247d/menu.js
   var menu_default;
   var init_menu = __esm({
-    "../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/cc508d3e-d47d-44e9-ab0c-6eb988e07de1/menu.js"() {
+    "../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/9d570300-b820-4d86-bb8b-70f7aa23247d/menu.js"() {
       if (document.getElementById("d755597c2f") === null) {
         const element = document.createElement("style");
         element.id = "d755597c2f";
@@ -982,10 +982,10 @@
     }
   });
 
-  // ../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/66bf10f2-d256-42f4-9f9a-ad722d3e0f4f/dropdown.js
+  // ../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/b434a15d-0f93-4e16-830a-60c79f326fb3/dropdown.js
   var dropdown_default;
   var init_dropdown = __esm({
-    "../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/66bf10f2-d256-42f4-9f9a-ad722d3e0f4f/dropdown.js"() {
+    "../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/b434a15d-0f93-4e16-830a-60c79f326fb3/dropdown.js"() {
       if (document.getElementById("83a6ef4e2a") === null) {
         const element = document.createElement("style");
         element.id = "83a6ef4e2a";
@@ -1254,10 +1254,10 @@
     }
   });
 
-  // ../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/748219ad-abcd-4b24-a265-d3ad518b667a/container.js
+  // ../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/9bdced15-40df-4e74-b4de-c819cba58e9a/container.js
   var container_default;
   var init_container = __esm({
-    "../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/748219ad-abcd-4b24-a265-d3ad518b667a/container.js"() {
+    "../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/9bdced15-40df-4e74-b4de-c819cba58e9a/container.js"() {
       if (document.getElementById("951d27024c") === null) {
         const element = document.createElement("style");
         element.id = "951d27024c";
@@ -1300,10 +1300,10 @@
     }
   });
 
-  // ../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/48aa8583-3037-4cb7-ab80-79d01bad3a91/vertical-space.js
+  // ../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/de3302f3-b0ec-44bd-9840-19d857cd8581/vertical-space.js
   var vertical_space_default;
   var init_vertical_space = __esm({
-    "../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/48aa8583-3037-4cb7-ab80-79d01bad3a91/vertical-space.js"() {
+    "../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/de3302f3-b0ec-44bd-9840-19d857cd8581/vertical-space.js"() {
       if (document.getElementById("a043008ed2") === null) {
         const element = document.createElement("style");
         element.id = "a043008ed2";
@@ -1346,10 +1346,10 @@
     }
   });
 
-  // ../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/fa6427d4-7012-4315-ae85-66a7c645e934/text.js
+  // ../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/af90aa71-f621-4b7b-aa88-5b07a0a8b63a/text.js
   var text_default;
   var init_text = __esm({
-    "../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/fa6427d4-7012-4315-ae85-66a7c645e934/text.js"() {
+    "../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/af90aa71-f621-4b7b-aa88-5b07a0a8b63a/text.js"() {
       if (document.getElementById("b4d79e7dc0") === null) {
         const element = document.createElement("style");
         element.id = "b4d79e7dc0";
@@ -1436,10 +1436,10 @@
     }
   });
 
-  // ../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/0bf74aca-d878-4a59-b4a2-6e7f23f33e1a/segmented-control.js
+  // ../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/fc7701f7-2396-40a0-995f-15cf2d123ed3/segmented-control.js
   var segmented_control_default;
   var init_segmented_control = __esm({
-    "../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/0bf74aca-d878-4a59-b4a2-6e7f23f33e1a/segmented-control.js"() {
+    "../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/fc7701f7-2396-40a0-995f-15cf2d123ed3/segmented-control.js"() {
       if (document.getElementById("3f14776336") === null) {
         const element = document.createElement("style");
         element.id = "3f14776336";
@@ -1620,9 +1620,9 @@
     }
   });
 
-  // ../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/3ac62856-2fa1-4e1d-8c8e-487f952dd558/base.js
+  // ../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/d7e79d4a-f11c-41a4-b5e4-c19a6b026418/base.js
   var init_base = __esm({
-    "../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/3ac62856-2fa1-4e1d-8c8e-487f952dd558/base.js"() {
+    "../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/d7e79d4a-f11c-41a4-b5e4-c19a6b026418/base.js"() {
       if (document.getElementById("75f5aa611d") === null) {
         const element = document.createElement("style");
         element.id = "75f5aa611d";
@@ -2030,19 +2030,20 @@ svg {
   function Plugin(props) {
     const [type, setType] = l2(props.type);
     const [title, setTitle] = l2(props.title);
-    const [deviceType, setDeviceType] = l2("Mobile");
+    const [deviceType, setDeviceType] = l2(props.deviceType);
+    const [device, setCurrentDevice] = l2(props.device);
+    const [backgroundEnabled, setBackgroundEnabled] = l2(props.backgroundEnabled);
+    const [deviceBorderEnabled, setDeviceBorderEnabled] = l2(props.deviceBorderEnabled);
     const deviceOptions = [
       { value: "Mobile" },
       { value: "Tablet" },
       { value: "Desktop" }
     ];
-    const [backgroundEnabled, setBackgroundEnabled] = l2("noBackground");
-    const [deviceBorderEnabled, setDeviceBorderEnabled] = l2("noBorder");
     const backgroundOptions = [
-      { children: /* @__PURE__ */ v(None16, null), value: "background" },
+      { children: /* @__PURE__ */ v(None16, null), value: "noBackground" },
       { children: /* @__PURE__ */ v(DeviceMobile16, {
         background: true
-      }), value: "noBackground" }
+      }), value: "background" }
     ];
     const deviceBorderOptions = [
       { children: /* @__PURE__ */ v(None16, null), value: "noBorder" },
@@ -2072,7 +2073,6 @@ svg {
       }
       setDeviceType(newValue);
     }
-    const [device, setCurrentDevice] = l2("iPhone 8");
     const mobileOptions = [
       { header: "Apple" },
       { value: "iPhone 8" },
@@ -2102,11 +2102,11 @@ svg {
     const handleUpdateButtonClick = F(function() {
       emit("UPDATE_TYPE", type);
       emit("UPDATE_TITLE", title);
+      emit("UPDATE_DEVICETYPE", deviceType);
       emit("UPDATE_DEVICE", device);
       emit("UPDATE_BACKGROUND_ENABLED", backgroundEnabled);
       emit("UPDATE_DEVICEBORDER_ENABLED", deviceBorderEnabled);
-      emit("UPDATE_DEVICETYPE", deviceType);
-    }, [type, title]);
+    }, [type, title, deviceType, device, backgroundEnabled, deviceBorderEnabled]);
     function getCurrentDeviceIcon(background) {
       if (deviceType == "Mobile") {
         return /* @__PURE__ */ v(DeviceMobile32, {
