@@ -44,7 +44,7 @@ function DeviceFrames () {
   }: WidgetPropertyEvent): Promise<void> {
     await new Promise<void>(function (resolve: () => void): void {
       if (propertyName === 'edit') {
-        showUI({ width: 240, height: 350 }, { type, title })
+        showUI({ width: 240, height: 300 }, { type, title })
         once('UPDATE_TYPE', function (type: string): void {
           setType(type); resolve();
         })

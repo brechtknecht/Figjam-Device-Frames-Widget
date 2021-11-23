@@ -116,7 +116,7 @@
     }) {
       await new Promise(function(resolve) {
         if (propertyName === "edit") {
-          showUI({ width: 240, height: 350 }, { type, title });
+          showUI({ width: 240, height: 300 }, { type, title });
           once("UPDATE_TYPE", function(type2) {
             setType(type2);
             resolve();

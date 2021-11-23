@@ -15,11 +15,16 @@ import {
   SegmentedControlOption
 } from '@create-figma-plugin/ui'
 import { emit } from '@create-figma-plugin/utilities'
-import { h } from 'preact'
+import { AnyComponent, h } from 'preact'
 import { useCallback, useState } from 'preact/hooks'
 
 import DeviceMobile16 from './components/icons/DeviceMobile16'
+import DeviceMobile32 from './components/icons/DeviceMobile32'
+import DeviceTablet32 from './components/icons/DeviceTablet32'
+import DeviceDesktop32 from './components/icons/DeviceDesktop32'
+
 import None16 from './components/icons/None16'
+import Check16 from './components/icons/Check16'
 
 function Plugin (props: { type: string, title: string }) {
   const [type, setType]     = useState(props.type)
@@ -43,8 +48,8 @@ function Plugin (props: { type: string, title: string }) {
   ]
 
   const deviceBorderOptions: Array<SegmentedControlOption> = [
-    { children: <IconArrowLeft16 />, value: 'noBorder' },
-    { children: <IconArrowLeft16 />, value: 'border' },
+    { children: <None16 />, value: 'noBorder' },
+    { children: <Check16 />, value: 'border' },
   ]
 
   function handleBackgroundEnabledChange(event: h.JSX.TargetedEvent<HTMLInputElement>) {
@@ -62,10 +67,23 @@ function Plugin (props: { type: string, title: string }) {
   function handleDeviceTypeChange(event: h.JSX.TargetedEvent<HTMLInputElement>) {
     const newValue = event.currentTarget.value
     console.log(newValue)
+
+    if(newValue == 'Mobile') {
+      setCurrentDevice('iPhone 8')
+    }
+
+    if(newValue == 'Tablet') {
+      setCurrentDevice('iPad Pro 11')
+    }
+
+    if(newValue == 'Desktop') {
+      setCurrentDevice('Laptop')
+    }
+
     setDeviceType(newValue)
   }
 
-  const [value, setMobileDevice] = useState('iPhone 8')
+  const [device, setCurrentDevice] = useState('iPhone 8')
 
   const mobileOptions: Array<DropdownOption> = [
     { header: 'Apple' },
@@ -78,13 +96,23 @@ function Plugin (props: { type: string, title: string }) {
     { value: 'Pixel 3' },
     { value: 'Pixel 3 XL' },
     { value: 'Pixel 4' },
-    { value: 'Pixel 4 XL' }
+    { value: 'Pixel 4 XL' },
+  ]
+
+  const tabletOptions: Array<DropdownOption> = [
+    { value: 'iPad Pro 11' },
+    { value: 'iPad 9.7"' },
+  ]
+
+  const desktopOptions: Array<DropdownOption> = [
+    { value: 'Laptop' },
+    { value: 'Browser' },
   ]
   
   function handleMobileChange(event: h.JSX.TargetedEvent<HTMLInputElement>) {
     const newValue = event.currentTarget.value
     console.log(newValue)
-    setMobileDevice(newValue)
+    setCurrentDevice(newValue)
   }
 
   const handleUpdateButtonClick = useCallback(
@@ -94,6 +122,19 @@ function Plugin (props: { type: string, title: string }) {
     },
     [type, title]
   )
+
+  function getCurrentDeviceIcon(background: Boolean){
+    if(deviceType == 'Mobile') {
+      return <DeviceMobile32 background={background}/>
+    }
+    if(deviceType == 'Tablet') {
+      return <DeviceTablet32 background={background}/>
+    }
+    if(deviceType == 'Desktop') {
+      return <DeviceDesktop32 background={background}/>
+    }
+  }
+
   return (
     <Container>
       {/* <VerticalSpace space='large' />
@@ -104,10 +145,9 @@ function Plugin (props: { type: string, title: string }) {
       <Text bold>Device Type</Text>
       <VerticalSpace space='large' />
       <div style="display: flex; justify-content: space-between; align-items: center;">
-
         <Dropdown
           noBorder
-          icon={<IconArrowLeft16 />}
+          icon={ getCurrentDeviceIcon(false)}
           onChange={handleDeviceTypeChange}
           options={deviceOptions}
           value={deviceType}
@@ -121,17 +161,37 @@ function Plugin (props: { type: string, title: string }) {
         <SegmentedControl onChange={handleDeviceBorderEnabledChange} options={deviceBorderOptions} value={deviceBorderEnabled} />
       </div>
       <VerticalSpace space='small' />
-      <Dropdown
-        icon={<IconArrowLeft16 />}
-        onChange={handleMobileChange}
-        options={mobileOptions}
-        value={value}
-      />
+      
+      <div>
+        {
+          deviceType === 'Mobile' && <Dropdown
+            onChange={handleMobileChange}
+            options={mobileOptions}
+            value={device}
+          />
+        }
+
+        {
+          deviceType === 'Tablet' && <Dropdown
+            onChange={handleMobileChange}
+            options={tabletOptions}
+            value={device}
+          />
+        }
+        {
+          deviceType === 'Desktop' && <Dropdown
+            onChange={handleMobileChange}
+            options={desktopOptions}
+            value={device}
+          />
+        }
+      </div>
+
       <VerticalSpace space='large' />
-      <Button fullWidth onClick={handleUpdateButtonClick}>
+      {/* <Button fullWidth onClick={handleUpdateButtonClick}>
         Update Text
       </Button>
-      <VerticalSpace space='small' />
+      <VerticalSpace space='small' /> */}
     </Container>
   )
 }
