@@ -48,4 +48,4 @@ Official docs and code samples from Figma:
 
 - [FigJam widget API docs](https://figma.com/widget-docs/)
 - [`figma/widget-samples`](https://github.com/figma/widget-samples#readme)
-# Advanced-Cards-Widget-Figjam-
+# DeviceFrames-Widget-Figjam-

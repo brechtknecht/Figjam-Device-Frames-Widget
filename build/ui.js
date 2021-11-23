@@ -439,13 +439,13 @@
     }
   });
 
-  // ../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/60e533be-a87f-4467-b70e-3b6104fbd2c1/loading-indicator.js
+  // ../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/2fcd426e-eac1-4cb1-99b8-caddc40dd6b2/loading-indicator.js
   var loading_indicator_default;
   var init_loading_indicator = __esm({
-    "../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/60e533be-a87f-4467-b70e-3b6104fbd2c1/loading-indicator.js"() {
-      if (document.getElementById("3bb8ad091e") === null) {
+    "../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/2fcd426e-eac1-4cb1-99b8-caddc40dd6b2/loading-indicator.js"() {
+      if (document.getElementById("95dd1d81f7") === null) {
         const element = document.createElement("style");
-        element.id = "3bb8ad091e";
+        element.id = "95dd1d81f7";
         element.textContent = `._loadingIndicator_12ibq_1 {
   position: relative;
   width: 16px;
@@ -516,13 +516,13 @@
     }
   });
 
-  // ../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/4cd85ba1-75a9-45f6-acad-59cf68c90252/button.js
+  // ../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/96432a2a-4101-4246-850c-c088673dc232/button.js
   var button_default;
   var init_button = __esm({
-    "../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/4cd85ba1-75a9-45f6-acad-59cf68c90252/button.js"() {
-      if (document.getElementById("4155f89663") === null) {
+    "../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/96432a2a-4101-4246-850c-c088673dc232/button.js"() {
+      if (document.getElementById("7f57db472a") === null) {
         const element = document.createElement("style");
-        element.id = "4155f89663";
+        element.id = "7f57db472a";
         element.textContent = `._button_1j1gr_1 {
   position: relative;
   z-index: var(--z-index-1);
@@ -654,6 +654,154 @@
     }
   });
 
+  // ../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/dc146b41-b2cb-4bfe-8832-0ac8b450cbbb/icon.js
+  var icon_default;
+  var init_icon = __esm({
+    "../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/dc146b41-b2cb-4bfe-8832-0ac8b450cbbb/icon.js"() {
+      if (document.getElementById("642172eea4") === null) {
+        const element = document.createElement("style");
+        element.id = "642172eea4";
+        element.textContent = `._currentColor_1k010_1 {
+  fill: currentColor;
+}
+
+._black-30_1k010_5 {
+  fill: var(--color-black-30);
+}
+._black-80_1k010_8 {
+  fill: var(--color-black-80);
+}
+._blue_1k010_11 {
+  fill: var(--color-accent);
+}
+._green_1k010_14 {
+  fill: var(--color-green);
+}
+._purple_1k010_17 {
+  fill: var(--color-purple);
+}
+._red_1k010_20 {
+  fill: var(--color-red);
+}
+._white_1k010_23 {
+  fill: var(--color-white);
+}
+._white-20_1k010_26 {
+  fill: var(--color-white-20-translucent);
+}
+._white-40_1k010_29 {
+  fill: var(--color-white-40-translucent);
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm5vZGVfbW9kdWxlcy9AY3JlYXRlLWZpZ21hLXBsdWdpbi91aS9saWIvY29tcG9uZW50cy9pY29uL2ljb24uY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Usa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UsMkJBQTJCO0FBQzdCO0FBQ0E7RUFDRSwyQkFBMkI7QUFDN0I7QUFDQTtFQUNFLHlCQUF5QjtBQUMzQjtBQUNBO0VBQ0Usd0JBQXdCO0FBQzFCO0FBQ0E7RUFDRSx5QkFBeUI7QUFDM0I7QUFDQTtFQUNFLHNCQUFzQjtBQUN4QjtBQUNBO0VBQ0Usd0JBQXdCO0FBQzFCO0FBQ0E7RUFDRSx1Q0FBdUM7QUFDekM7QUFDQTtFQUNFLHVDQUF1QztBQUN6QyIsImZpbGUiOiJub2RlX21vZHVsZXMvQGNyZWF0ZS1maWdtYS1wbHVnaW4vdWkvbGliL2NvbXBvbmVudHMvaWNvbi9pY29uLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jdXJyZW50Q29sb3Ige1xuICBmaWxsOiBjdXJyZW50Q29sb3I7XG59XG5cbi5ibGFjay0zMCB7XG4gIGZpbGw6IHZhcigtLWNvbG9yLWJsYWNrLTMwKTtcbn1cbi5ibGFjay04MCB7XG4gIGZpbGw6IHZhcigtLWNvbG9yLWJsYWNrLTgwKTtcbn1cbi5ibHVlIHtcbiAgZmlsbDogdmFyKC0tY29sb3ItYWNjZW50KTtcbn1cbi5ncmVlbiB7XG4gIGZpbGw6IHZhcigtLWNvbG9yLWdyZWVuKTtcbn1cbi5wdXJwbGUge1xuICBmaWxsOiB2YXIoLS1jb2xvci1wdXJwbGUpO1xufVxuLnJlZCB7XG4gIGZpbGw6IHZhcigtLWNvbG9yLXJlZCk7XG59XG4ud2hpdGUge1xuICBmaWxsOiB2YXIoLS1jb2xvci13aGl0ZSk7XG59XG4ud2hpdGUtMjAge1xuICBmaWxsOiB2YXIoLS1jb2xvci13aGl0ZS0yMC10cmFuc2x1Y2VudCk7XG59XG4ud2hpdGUtNDAge1xuICBmaWxsOiB2YXIoLS1jb2xvci13aGl0ZS00MC10cmFuc2x1Y2VudCk7XG59XG4iXX0= */`;
+        document.head.append(element);
+      }
+      icon_default = { "currentColor": "_currentColor_1k010_1", "black-30": "_black-30_1k010_5", "black-80": "_black-80_1k010_8", "blue": "_blue_1k010_11", "green": "_green_1k010_14", "purple": "_purple_1k010_17", "red": "_red_1k010_20", "white": "_white_1k010_23", "white-20": "_white-20_1k010_26", "white-40": "_white-40_1k010_29" };
+    }
+  });
+
+  // node_modules/@create-figma-plugin/ui/lib/components/icon/create-icon.js
+  function createIcon(path, options) {
+    const { width, height } = options;
+    return function Icon(_a) {
+      var _b = _a, { color } = _b, rest = __objRest(_b, ["color"]);
+      return v("svg", __spreadProps(__spreadValues({}, rest), { class: typeof color === "undefined" ? icon_default.currentColor : icon_default[color], height, width, xmlns: "http://www.w3.org/2000/svg" }), v("path", { "clip-rule": "evenodd", d: path, "fill-rule": "evenodd" }));
+    };
+  }
+  var init_create_icon = __esm({
+    "node_modules/@create-figma-plugin/ui/lib/components/icon/create-icon.js"() {
+      init_preact_module();
+      init_icon();
+    }
+  });
+
+  // ../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/9dd8e087-1171-440c-8886-d1fbfe13f8cd/menu.js
+  var menu_default;
+  var init_menu = __esm({
+    "../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/9dd8e087-1171-440c-8886-d1fbfe13f8cd/menu.js"() {
+      if (document.getElementById("d755597c2f") === null) {
+        const element = document.createElement("style");
+        element.id = "d755597c2f";
+        element.textContent = `._menu_1c077_1 {
+  position: absolute;
+  left: 0;
+  min-width: 100%;
+  padding: var(--space-extra-small) 0;
+  background-color: var(--color-hud);
+  border-radius: var(--border-radius-2);
+  box-shadow: var(--box-shadow-menu);
+  color: var(--color-white);
+  font-size: var(--font-size-12);
+  overflow-y: auto;
+}
+._menu_1c077_1::-webkit-scrollbar {
+  display: none;
+}
+
+._hidden_1c077_17 {
+  pointer-events: none;
+  visibility: hidden;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 1.5),
+  screen and (min-resolution: 1.5dppx) {
+  ._menu_1c077_1 {
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+._optionHeader_1c077_29,
+._optionValue_1c077_30 {
+  padding: 4px var(--space-medium) 4px 32px;
+  white-space: nowrap;
+}
+
+._optionHeader_1c077_29 {
+  color: var(--color-white-40-translucent);
+  font-size: var(--font-size-12);
+}
+
+._optionValue_1c077_30 {
+  position: relative;
+}
+._optionValueSelected_1c077_43 {
+  background-color: var(--color-accent);
+}
+._optionValueDisabled_1c077_46 {
+  color: var(--color-white-40-translucent);
+}
+
+._optionSeparator_1c077_50 {
+  width: 100%;
+  height: 1px;
+  margin: var(--space-extra-small) 0;
+  background-color: var(--color-white-20-translucent);
+}
+
+._input_1c077_57 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+._checkIcon_1c077_68 {
+  position: absolute;
+  top: 5px;
+  left: var(--space-extra-small);
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm5vZGVfbW9kdWxlcy9AY3JlYXRlLWZpZ21hLXBsdWdpbi91aS9saWIvY3NzL21lbnUuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Usa0JBQWtCO0VBQ2xCLE9BQU87RUFDUCxlQUFlO0VBQ2YsbUNBQW1DO0VBQ25DLGtDQUFrQztFQUNsQyxxQ0FBcUM7RUFDckMsa0NBQWtDO0VBQ2xDLHlCQUF5QjtFQUN6Qiw4QkFBOEI7RUFDOUIsZ0JBQWdCO0FBQ2xCO0FBQ0E7RUFDRSxhQUFhO0FBQ2Y7O0FBRUE7RUFDRSxvQkFBb0I7RUFDcEIsa0JBQWtCO0FBQ3BCOztBQUVBOztFQUVFO0lBQ0UsbUNBQW1DO0VBQ3JDO0FBQ0Y7O0FBRUE7O0VBRUUseUNBQXlDO0VBQ3pDLG1CQUFtQjtBQUNyQjs7QUFFQTtFQUNFLHdDQUF3QztFQUN4Qyw4QkFBOEI7QUFDaEM7O0FBRUE7RUFDRSxrQkFBa0I7QUFDcEI7QUFDQTtFQUNFLHFDQUFxQztBQUN2QztBQUNBO0VBQ0Usd0NBQXdDO0FBQzFDOztBQUVBO0VBQ0UsV0FBVztFQUNYLFdBQVc7RUFDWCxrQ0FBa0M7RUFDbEMsbURBQW1EO0FBQ3JEOztBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLE1BQU07RUFDTixRQUFRO0VBQ1IsU0FBUztFQUNULE9BQU87RUFDUCxjQUFjO0VBQ2QsV0FBVztFQUNYLFlBQVk7QUFDZDs7QUFFQTtFQUNFLGtCQUFrQjtFQUNsQixRQUFRO0VBQ1IsOEJBQThCO0FBQ2hDIiwiZmlsZSI6Im5vZGVfbW9kdWxlcy9AY3JlYXRlLWZpZ21hLXBsdWdpbi91aS9saWIvY3NzL21lbnUuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLm1lbnUge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGxlZnQ6IDA7XG4gIG1pbi13aWR0aDogMTAwJTtcbiAgcGFkZGluZzogdmFyKC0tc3BhY2UtZXh0cmEtc21hbGwpIDA7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWNvbG9yLWh1ZCk7XG4gIGJvcmRlci1yYWRpdXM6IHZhcigtLWJvcmRlci1yYWRpdXMtMik7XG4gIGJveC1zaGFkb3c6IHZhcigtLWJveC1zaGFkb3ctbWVudSk7XG4gIGNvbG9yOiB2YXIoLS1jb2xvci13aGl0ZSk7XG4gIGZvbnQtc2l6ZTogdmFyKC0tZm9udC1zaXplLTEyKTtcbiAgb3ZlcmZsb3cteTogYXV0bztcbn1cbi5tZW51Ojotd2Via2l0LXNjcm9sbGJhciB7XG4gIGRpc3BsYXk6IG5vbmU7XG59XG5cbi5oaWRkZW4ge1xuICBwb2ludGVyLWV2ZW50czogbm9uZTtcbiAgdmlzaWJpbGl0eTogaGlkZGVuO1xufVxuXG5AbWVkaWEgc2NyZWVuIGFuZCAoLXdlYmtpdC1taW4tZGV2aWNlLXBpeGVsLXJhdGlvOiAxLjUpLFxuICBzY3JlZW4gYW5kIChtaW4tcmVzb2x1dGlvbjogMS41ZHBweCkge1xuICAubWVudSB7XG4gICAgLXdlYmtpdC1mb250LXNtb290aGluZzogYW50aWFsaWFzZWQ7XG4gIH1cbn1cblxuLm9wdGlvbkhlYWRlcixcbi5vcHRpb25WYWx1ZSB7XG4gIHBhZGRpbmc6IDRweCB2YXIoLS1zcGFjZS1tZWRpdW0pIDRweCAzMnB4O1xuICB3aGl0ZS1zcGFjZTogbm93cmFwO1xufVxuXG4ub3B0aW9uSGVhZGVyIHtcbiAgY29sb3I6IHZhcigtLWNvbG9yLXdoaXRlLTQwLXRyYW5zbHVjZW50KTtcbiAgZm9udC1zaXplOiB2YXIoLS1mb250LXNpemUtMTIpO1xufVxuXG4ub3B0aW9uVmFsdWUge1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG59XG4ub3B0aW9uVmFsdWVTZWxlY3RlZCB7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWNvbG9yLWFjY2VudCk7XG59XG4ub3B0aW9uVmFsdWVEaXNhYmxlZCB7XG4gIGNvbG9yOiB2YXIoLS1jb2xvci13aGl0ZS00MC10cmFuc2x1Y2VudCk7XG59XG5cbi5vcHRpb25TZXBhcmF0b3Ige1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAxcHg7XG4gIG1hcmdpbjogdmFyKC0tc3BhY2UtZXh0cmEtc21hbGwpIDA7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWNvbG9yLXdoaXRlLTIwLXRyYW5zbHVjZW50KTtcbn1cblxuLmlucHV0IHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB0b3A6IDA7XG4gIHJpZ2h0OiAwO1xuICBib3R0b206IDA7XG4gIGxlZnQ6IDA7XG4gIGRpc3BsYXk6IGJsb2NrO1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAxMDAlO1xufVxuXG4uY2hlY2tJY29uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB0b3A6IDVweDtcbiAgbGVmdDogdmFyKC0tc3BhY2UtZXh0cmEtc21hbGwpO1xufVxuIl19 */`;
+        document.head.append(element);
+      }
+      menu_default = { "menu": "_menu_1c077_1", "hidden": "_hidden_1c077_17", "optionHeader": "_optionHeader_1c077_29", "optionValue": "_optionValue_1c077_30", "optionValueSelected": "_optionValueSelected_1c077_43", "optionValueDisabled": "_optionValueDisabled_1c077_46", "optionSeparator": "_optionSeparator_1c077_50", "input": "_input_1c077_57", "checkIcon": "_checkIcon_1c077_68" };
+    }
+  });
+
   // node_modules/@create-figma-plugin/ui/lib/utilities/get-current-from-ref.js
   function getCurrentFromRef(ref) {
     if (ref.current === null) {
@@ -666,13 +814,431 @@
     }
   });
 
-  // ../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/3d13552a-6193-4b36-8176-4ccdc9519ff2/container.js
+  // node_modules/@create-figma-plugin/ui/lib/hooks/use-mouse-down-outside.js
+  function useMouseDownOutside(options) {
+    const { ref, onMouseDownOutside } = options;
+    y2(function() {
+      function handleBlur() {
+        onMouseDownOutside();
+      }
+      function handleMouseDown(event) {
+        const element = getCurrentFromRef(ref);
+        if (element === event.target || element.contains(event.target)) {
+          return;
+        }
+        onMouseDownOutside();
+      }
+      window.addEventListener("blur", handleBlur);
+      window.addEventListener("mousedown", handleMouseDown);
+      return function() {
+        window.removeEventListener("blur", handleBlur);
+        window.removeEventListener("mousedown", handleMouseDown);
+      };
+    }, [ref, onMouseDownOutside]);
+  }
+  var init_use_mouse_down_outside = __esm({
+    "node_modules/@create-figma-plugin/ui/lib/hooks/use-mouse-down-outside.js"() {
+      init_hooks_module();
+      init_get_current_from_ref();
+    }
+  });
+
+  // node_modules/@create-figma-plugin/ui/lib/hooks/use-scrollable-menu.js
+  function useScrollableMenu(options) {
+    const { itemIdDataAttributeName, menuElementRef, selectedId, setSelectedId } = options;
+    const getItemElements = F(function() {
+      return Array.from(getCurrentFromRef(menuElementRef).querySelectorAll(`[${itemIdDataAttributeName}]`)).filter(function(element) {
+        return element.hasAttribute("disabled") === false;
+      });
+    }, [itemIdDataAttributeName, menuElementRef]);
+    const findIndexByItemId = F(function(id) {
+      if (id === null) {
+        return -1;
+      }
+      const index = getItemElements().findIndex(function(element) {
+        return element.getAttribute(itemIdDataAttributeName) === id;
+      });
+      if (index === -1) {
+        throw new Error("Invariant violation");
+      }
+      return index;
+    }, [getItemElements, itemIdDataAttributeName]);
+    const updateScrollPosition = F(function(id) {
+      const itemElements = getItemElements();
+      const index = findIndexByItemId(id);
+      const selectedElement = itemElements[index];
+      const menuElement = getCurrentFromRef(menuElementRef);
+      const scrollTop = menuElement.scrollTop;
+      const offsetTop = computeRelativeOffsetTop(selectedElement, menuElement);
+      if (offsetTop < scrollTop) {
+        menuElement.scrollTop = offsetTop;
+        return;
+      }
+      const offsetBottom = offsetTop + selectedElement.offsetHeight;
+      if (offsetBottom > menuElement.scrollTop + menuElement.offsetHeight) {
+        menuElement.scrollTop = offsetBottom - menuElement.offsetHeight;
+      }
+    }, [findIndexByItemId, getItemElements, menuElementRef]);
+    const handleScrollableMenuKeyDown = F(function(event) {
+      const key = event.key;
+      if (key === "ArrowDown" || key === "ArrowUp") {
+        const itemElements = getItemElements();
+        const index = findIndexByItemId(selectedId);
+        let newIndex;
+        if (key === "ArrowDown") {
+          newIndex = index === -1 || index === itemElements.length - 1 ? 0 : index + 1;
+        } else {
+          newIndex = index === -1 || index === 0 ? itemElements.length - 1 : index - 1;
+        }
+        const selectedElement = itemElements[newIndex];
+        const newSelectedId = selectedElement.getAttribute(itemIdDataAttributeName);
+        setSelectedId(newSelectedId);
+        updateScrollPosition(newSelectedId);
+      }
+    }, [
+      getItemElements,
+      findIndexByItemId,
+      itemIdDataAttributeName,
+      setSelectedId,
+      selectedId,
+      updateScrollPosition
+    ]);
+    const handleScrollableMenuItemMouseMove = F(function(event) {
+      const id = event.currentTarget.getAttribute(itemIdDataAttributeName);
+      if (id !== selectedId) {
+        setSelectedId(id);
+      }
+    }, [itemIdDataAttributeName, selectedId, setSelectedId]);
+    return {
+      handleScrollableMenuItemMouseMove,
+      handleScrollableMenuKeyDown
+    };
+  }
+  function computeRelativeOffsetTop(targetElement, parentElement) {
+    let element = targetElement;
+    let offsetTop = 0;
+    while (element !== parentElement) {
+      offsetTop += element.offsetTop;
+      if (element.parentElement === null) {
+        throw new Error("`element.parentElement` is `null`");
+      }
+      element = element.parentElement;
+    }
+    return offsetTop;
+  }
+  var init_use_scrollable_menu = __esm({
+    "node_modules/@create-figma-plugin/ui/lib/hooks/use-scrollable-menu.js"() {
+      init_hooks_module();
+      init_get_current_from_ref();
+    }
+  });
+
+  // node_modules/@create-figma-plugin/ui/lib/components/icon/icon-8/icon-control-chevron-down-8.js
+  var IconControlChevronDown8;
+  var init_icon_control_chevron_down_8 = __esm({
+    "node_modules/@create-figma-plugin/ui/lib/components/icon/icon-8/icon-control-chevron-down-8.js"() {
+      init_create_icon();
+      IconControlChevronDown8 = createIcon("m3.64641 6.35352-3-3 .70711-.70711 2.64644 2.64645 2.64645-2.64645.70711.70711-3 3-.35356.35355-.35355-.35355Z", { height: 8, width: 8 });
+    }
+  });
+
+  // node_modules/@create-figma-plugin/ui/lib/components/icon/icon-16/icon-menu-checkmark-checked-16.js
+  var IconMenuCheckmarkChecked16;
+  var init_icon_menu_checkmark_checked_16 = __esm({
+    "node_modules/@create-figma-plugin/ui/lib/components/icon/icon-16/icon-menu-checkmark-checked-16.js"() {
+      init_create_icon();
+      IconMenuCheckmarkChecked16 = createIcon("M13.2069 5.20724 7.70688 10.7072l-.70711.7072-.70711-.7072-3-2.99996 1.41422-1.41421 2.29289 2.29289 4.79293-4.79289 1.4142 1.41421Z", { height: 16, width: 16 });
+    }
+  });
+
+  // ../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/434f3b1c-ec68-4abc-ac37-0d30632fcf35/dropdown.js
+  var dropdown_default;
+  var init_dropdown = __esm({
+    "../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/434f3b1c-ec68-4abc-ac37-0d30632fcf35/dropdown.js"() {
+      if (document.getElementById("83a6ef4e2a") === null) {
+        const element = document.createElement("style");
+        element.id = "83a6ef4e2a";
+        element.textContent = `._dropdown_1cl7e_1 {
+  position: relative;
+  z-index: var(--z-index-1);
+  display: flex;
+  height: 28px;
+  align-items: center;
+  padding-left: var(--space-extra-small);
+  color: var(--color-black-80);
+}
+._dropdown_1cl7e_1:not(._disabled_1cl7e_10):focus-within {
+  z-index: var(--z-index-2); /* stack \`.dropdown\` over its sibling elements */
+  outline: 0;
+}
+._disabled_1cl7e_10 {
+  opacity: var(--opacity-30);
+}
+
+._disabled_1cl7e_10,
+._disabled_1cl7e_10 > * {
+  cursor: not-allowed;
+}
+
+._icon_1cl7e_23 {
+  position: absolute;
+  top: 14px;
+  left: 16px;
+  color: var(--color-black-30);
+  pointer-events: none; /* so that clicking the icon focuses the dropdown */
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+._value_1cl7e_33 {
+  overflow: hidden;
+  margin-right: 6px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+._dropdown_1cl7e_1:not(._disabled_1cl7e_10):hover ._value_1cl7e_33,
+._dropdown_1cl7e_1:not(._disabled_1cl7e_10):focus ._value_1cl7e_33,
+._dropdown_1cl7e_1:not(._disabled_1cl7e_10):focus-within ._value_1cl7e_33 {
+  flex-grow: 1;
+}
+._placeholder_1cl7e_44 {
+  color: var(--color-black-30);
+}
+._hasIcon_1cl7e_47 ._value_1cl7e_33 {
+  padding-left: var(--space-extra-large);
+}
+
+._chevronIcon_1cl7e_51 {
+  margin-right: var(--space-extra-small);
+  color: var(--color-black-30);
+}
+._dropdown_1cl7e_1:not(._disabled_1cl7e_10):hover ._chevronIcon_1cl7e_51 {
+  color: var(--color-black-80);
+}
+
+._border_1cl7e_59 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-width: 1px;
+  border-color: var(--color-silver);
+  border-radius: var(--border-radius-2);
+}
+._noBorder_1cl7e_69 ._border_1cl7e_59 {
+  border-color: transparent;
+}
+._noBorder_1cl7e_69:not(._disabled_1cl7e_10):hover ._border_1cl7e_59 {
+  border-color: var(--color-silver);
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm5vZGVfbW9kdWxlcy9AY3JlYXRlLWZpZ21hLXBsdWdpbi91aS9saWIvY29tcG9uZW50cy9kcm9wZG93bi9kcm9wZG93bi5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxrQkFBa0I7RUFDbEIseUJBQXlCO0VBQ3pCLGFBQWE7RUFDYixZQUFZO0VBQ1osbUJBQW1CO0VBQ25CLHNDQUFzQztFQUN0Qyw0QkFBNEI7QUFDOUI7QUFDQTtFQUNFLHlCQUF5QixFQUFFLGdEQUFnRDtFQUMzRSxVQUFVO0FBQ1o7QUFDQTtFQUNFLDBCQUEwQjtBQUM1Qjs7QUFFQTs7RUFFRSxtQkFBbUI7QUFDckI7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsU0FBUztFQUNULFVBQVU7RUFDViw0QkFBNEI7RUFDNUIsb0JBQW9CLEVBQUUsbURBQW1EO0VBQ3pFLGtCQUFrQjtFQUNsQixnQ0FBZ0M7QUFDbEM7O0FBRUE7RUFDRSxnQkFBZ0I7RUFDaEIsaUJBQWlCO0VBQ2pCLHVCQUF1QjtFQUN2QixtQkFBbUI7QUFDckI7QUFDQTs7O0VBR0UsWUFBWTtBQUNkO0FBQ0E7RUFDRSw0QkFBNEI7QUFDOUI7QUFDQTtFQUNFLHNDQUFzQztBQUN4Qzs7QUFFQTtFQUNFLHNDQUFzQztFQUN0Qyw0QkFBNEI7QUFDOUI7QUFDQTtFQUNFLDRCQUE0QjtBQUM5Qjs7QUFFQTtFQUNFLGtCQUFrQjtFQUNsQixNQUFNO0VBQ04sUUFBUTtFQUNSLFNBQVM7RUFDVCxPQUFPO0VBQ1AsaUJBQWlCO0VBQ2pCLGlDQUFpQztFQUNqQyxxQ0FBcUM7QUFDdkM7QUFDQTtFQUNFLHlCQUF5QjtBQUMzQjtBQUNBO0VBQ0UsaUNBQWlDO0FBQ25DIiwiZmlsZSI6Im5vZGVfbW9kdWxlcy9AY3JlYXRlLWZpZ21hLXBsdWdpbi91aS9saWIvY29tcG9uZW50cy9kcm9wZG93bi9kcm9wZG93bi5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZHJvcGRvd24ge1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIHotaW5kZXg6IHZhcigtLXotaW5kZXgtMSk7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGhlaWdodDogMjhweDtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgcGFkZGluZy1sZWZ0OiB2YXIoLS1zcGFjZS1leHRyYS1zbWFsbCk7XG4gIGNvbG9yOiB2YXIoLS1jb2xvci1ibGFjay04MCk7XG59XG4uZHJvcGRvd246bm90KC5kaXNhYmxlZCk6Zm9jdXMtd2l0aGluIHtcbiAgei1pbmRleDogdmFyKC0tei1pbmRleC0yKTsgLyogc3RhY2sgYC5kcm9wZG93bmAgb3ZlciBpdHMgc2libGluZyBlbGVtZW50cyAqL1xuICBvdXRsaW5lOiAwO1xufVxuLmRpc2FibGVkIHtcbiAgb3BhY2l0eTogdmFyKC0tb3BhY2l0eS0zMCk7XG59XG5cbi5kaXNhYmxlZCxcbi5kaXNhYmxlZCA+ICoge1xuICBjdXJzb3I6IG5vdC1hbGxvd2VkO1xufVxuXG4uaWNvbiB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiAxNHB4O1xuICBsZWZ0OiAxNnB4O1xuICBjb2xvcjogdmFyKC0tY29sb3ItYmxhY2stMzApO1xuICBwb2ludGVyLWV2ZW50czogbm9uZTsgLyogc28gdGhhdCBjbGlja2luZyB0aGUgaWNvbiBmb2N1c2VzIHRoZSBkcm9wZG93biAqL1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIHRyYW5zZm9ybTogdHJhbnNsYXRlKC01MCUsIC01MCUpO1xufVxuXG4udmFsdWUge1xuICBvdmVyZmxvdzogaGlkZGVuO1xuICBtYXJnaW4tcmlnaHQ6IDZweDtcbiAgdGV4dC1vdmVyZmxvdzogZWxsaXBzaXM7XG4gIHdoaXRlLXNwYWNlOiBub3dyYXA7XG59XG4uZHJvcGRvd246bm90KC5kaXNhYmxlZCk6aG92ZXIgLnZhbHVlLFxuLmRyb3Bkb3duOm5vdCguZGlzYWJsZWQpOmZvY3VzIC52YWx1ZSxcbi5kcm9wZG93bjpub3QoLmRpc2FibGVkKTpmb2N1cy13aXRoaW4gLnZhbHVlIHtcbiAgZmxleC1ncm93OiAxO1xufVxuLnBsYWNlaG9sZGVyIHtcbiAgY29sb3I6IHZhcigtLWNvbG9yLWJsYWNrLTMwKTtcbn1cbi5oYXNJY29uIC52YWx1ZSB7XG4gIHBhZGRpbmctbGVmdDogdmFyKC0tc3BhY2UtZXh0cmEtbGFyZ2UpO1xufVxuXG4uY2hldnJvbkljb24ge1xuICBtYXJnaW4tcmlnaHQ6IHZhcigtLXNwYWNlLWV4dHJhLXNtYWxsKTtcbiAgY29sb3I6IHZhcigtLWNvbG9yLWJsYWNrLTMwKTtcbn1cbi5kcm9wZG93bjpub3QoLmRpc2FibGVkKTpob3ZlciAuY2hldnJvbkljb24ge1xuICBjb2xvcjogdmFyKC0tY29sb3ItYmxhY2stODApO1xufVxuXG4uYm9yZGVyIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB0b3A6IDA7XG4gIHJpZ2h0OiAwO1xuICBib3R0b206IDA7XG4gIGxlZnQ6IDA7XG4gIGJvcmRlci13aWR0aDogMXB4O1xuICBib3JkZXItY29sb3I6IHZhcigtLWNvbG9yLXNpbHZlcik7XG4gIGJvcmRlci1yYWRpdXM6IHZhcigtLWJvcmRlci1yYWRpdXMtMik7XG59XG4ubm9Cb3JkZXIgLmJvcmRlciB7XG4gIGJvcmRlci1jb2xvcjogdHJhbnNwYXJlbnQ7XG59XG4ubm9Cb3JkZXI6bm90KC5kaXNhYmxlZCk6aG92ZXIgLmJvcmRlciB7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tY29sb3Itc2lsdmVyKTtcbn1cbiJdfQ== */`;
+        document.head.append(element);
+      }
+      dropdown_default = { "dropdown": "_dropdown_1cl7e_1", "disabled": "_disabled_1cl7e_10", "icon": "_icon_1cl7e_23", "value": "_value_1cl7e_33", "placeholder": "_placeholder_1cl7e_44", "hasIcon": "_hasIcon_1cl7e_47", "chevronIcon": "_chevronIcon_1cl7e_51", "border": "_border_1cl7e_59", "noBorder": "_noBorder_1cl7e_69" };
+    }
+  });
+
+  // node_modules/@create-figma-plugin/ui/lib/components/dropdown/dropdown.js
+  function Dropdown(_a) {
+    var _b = _a, { disabled = false, icon, name, noBorder, options, onChange = function() {
+    }, onValueChange = function() {
+    }, placeholder, value } = _b, rest = __objRest(_b, ["disabled", "icon", "name", "noBorder", "options", "onChange", "onValueChange", "placeholder", "value"]);
+    if (typeof icon === "string" && icon.length !== 1) {
+      throw new Error(`String \`icon\` must be a single character: ${icon}`);
+    }
+    const rootElementRef = s2(null);
+    const menuElementRef = s2(null);
+    const [isMenuVisible, setIsMenuVisible] = l2(false);
+    const index = findOptionIndexByValue(options, value);
+    if (value !== null && index === -1) {
+      throw new Error(`Invalid \`value\`: ${value}`);
+    }
+    const [selectedId, setSelectedId] = l2(index === -1 ? null : `${index}`);
+    const children = typeof options[index] === "undefined" ? "" : getDropdownOptionValue(options[index]);
+    const { handleScrollableMenuKeyDown, handleScrollableMenuItemMouseMove } = useScrollableMenu({
+      itemIdDataAttributeName: ITEM_ID_DATA_ATTRIBUTE_NAME,
+      menuElementRef,
+      selectedId,
+      setSelectedId
+    });
+    const triggerBlur = F(function() {
+      setIsMenuVisible(false);
+      setSelectedId(INVALID_ID);
+      getCurrentFromRef(rootElementRef).blur();
+      const menuElement = getCurrentFromRef(menuElementRef);
+      menuElement.removeAttribute("style");
+    }, []);
+    const handleRootFocus = F(function() {
+      setIsMenuVisible(true);
+      const rootElement = getCurrentFromRef(rootElementRef);
+      const menuElement = getCurrentFromRef(menuElementRef);
+      if (value === null) {
+        updateMenuElementLayout(rootElement, menuElement, INVALID_ID);
+        return;
+      }
+      const index2 = findOptionIndexByValue(options, value);
+      if (index2 === -1) {
+        throw new Error(`Invalid \`value\`: ${value}`);
+      }
+      const newSelectedId = `${index2}`;
+      setSelectedId(newSelectedId);
+      updateMenuElementLayout(rootElement, menuElement, newSelectedId);
+    }, [options, value]);
+    const handleRootKeyDown = F(function(event) {
+      if (event.key === "Escape" || event.key === "Tab") {
+        triggerBlur();
+        return;
+      }
+      if (event.key === "Enter") {
+        if (selectedId !== INVALID_ID) {
+          const selectedElement = getCurrentFromRef(menuElementRef).querySelector(`[${ITEM_ID_DATA_ATTRIBUTE_NAME}='${selectedId}']`);
+          if (selectedElement === null) {
+            throw new Error("Invariant violation");
+          }
+          selectedElement.checked = true;
+          const changeEvent = document.createEvent("Event");
+          changeEvent.initEvent("change", true, true);
+          selectedElement.dispatchEvent(changeEvent);
+        }
+        triggerBlur();
+        return;
+      }
+      handleScrollableMenuKeyDown(event);
+    }, [handleScrollableMenuKeyDown, selectedId, triggerBlur]);
+    const handleRootMouseDown = F(function(event) {
+      if (isMenuVisible === false) {
+        return;
+      }
+      event.preventDefault();
+      triggerBlur();
+    }, [isMenuVisible, triggerBlur]);
+    const handleMenuMouseDown = F(function(event) {
+      event.stopPropagation();
+    }, []);
+    const handleOptionChange = F(function(event) {
+      const id = event.currentTarget.getAttribute(ITEM_ID_DATA_ATTRIBUTE_NAME);
+      const optionValue = options[parseInt(id, 10)];
+      const newValue = optionValue.value;
+      onValueChange(newValue, name);
+      onChange(event);
+      triggerBlur();
+    }, [name, onChange, onValueChange, options, triggerBlur]);
+    const handleMouseDownOutside = F(function() {
+      if (isMenuVisible === false) {
+        return;
+      }
+      triggerBlur();
+    }, [isMenuVisible, triggerBlur]);
+    useMouseDownOutside({
+      onMouseDownOutside: handleMouseDownOutside,
+      ref: rootElementRef
+    });
+    return v("div", __spreadProps(__spreadValues({}, rest), { ref: rootElementRef, class: createClassName([
+      dropdown_default.dropdown,
+      noBorder === true ? dropdown_default.noBorder : null,
+      typeof icon === "undefined" ? null : dropdown_default.hasIcon,
+      disabled === true ? dropdown_default.disabled : null
+    ]), onFocus: handleRootFocus, onKeyDown: disabled === true ? void 0 : handleRootKeyDown, onMouseDown: handleRootMouseDown, tabIndex: disabled === true ? -1 : 0 }), typeof icon === "undefined" ? null : v("div", { class: dropdown_default.icon }, icon), value === null ? typeof placeholder === "undefined" ? null : v("div", { class: createClassName([
+      dropdown_default.value,
+      dropdown_default.placeholder
+    ]) }, placeholder) : v("div", { class: dropdown_default.value }, children), v("div", { class: dropdown_default.chevronIcon }, v(IconControlChevronDown8, null)), v("div", { class: dropdown_default.border }), v("div", { ref: menuElementRef, class: createClassName([
+      menu_default.menu,
+      disabled === true || isMenuVisible === false ? menu_default.hidden : null
+    ]), onMouseDown: handleMenuMouseDown }, options.map(function(option, index2) {
+      if ("separator" in option) {
+        return v("hr", { key: index2, class: menu_default.optionSeparator });
+      }
+      if ("header" in option) {
+        return v("h1", { key: index2, class: menu_default.optionHeader }, option.header);
+      }
+      return v("label", { key: index2, class: createClassName([
+        menu_default.optionValue,
+        option.disabled === true ? menu_default.optionValueDisabled : null,
+        option.disabled !== true && `${index2}` === selectedId ? menu_default.optionValueSelected : null
+      ]) }, v("input", __spreadValues({ checked: value === option.value, class: menu_default.input, disabled: option.disabled === true, name, onChange: value === option.value ? void 0 : handleOptionChange, onClick: value === option.value ? triggerBlur : void 0, onMouseMove: handleScrollableMenuItemMouseMove, tabIndex: -1, type: "radio", value: `${option.value}` }, { [ITEM_ID_DATA_ATTRIBUTE_NAME]: `${index2}` })), option.value === value ? v("div", { class: menu_default.checkIcon }, v(IconMenuCheckmarkChecked16, null)) : null, typeof option.children === "undefined" ? option.value : option.children);
+    })));
+  }
+  function getDropdownOptionValue(option) {
+    if ("children" in option) {
+      return option.children;
+    }
+    if ("value" in option) {
+      return option.value;
+    }
+    throw new Error("Invariant violation");
+  }
+  function findOptionIndexByValue(options, value) {
+    if (value === null) {
+      return -1;
+    }
+    let index = 0;
+    for (const option of options) {
+      if ("value" in option && option.value === value) {
+        return index;
+      }
+      index += 1;
+    }
+    return -1;
+  }
+  function updateMenuElementLayout(rootElement, menuElement, selectedId) {
+    const menuElementBoundingClientRect = menuElement.getBoundingClientRect();
+    const leftOffset = window.innerWidth - VIEWPORT_MARGIN - (menuElementBoundingClientRect.left + menuElement.offsetWidth);
+    if (leftOffset < 0) {
+      const maximumLeftOffset = VIEWPORT_MARGIN - menuElementBoundingClientRect.left;
+      menuElement.style.left = `${Math.max(maximumLeftOffset, leftOffset)}px`;
+    }
+    const maxHeight = window.innerHeight - 2 * VIEWPORT_MARGIN;
+    menuElement.style.maxHeight = `${maxHeight}px`;
+    const topOffset = Math.min(0, window.innerHeight - VIEWPORT_MARGIN - (rootElement.getBoundingClientRect().top + menuElement.offsetHeight));
+    if (selectedId === INVALID_ID || topOffset !== 0) {
+      menuElement.style.top = `${topOffset}px`;
+      return;
+    }
+    const selectedElement = menuElement.querySelector(`[${ITEM_ID_DATA_ATTRIBUTE_NAME}='${selectedId}']`);
+    if (selectedElement === null) {
+      throw new Error("Invariant violation");
+    }
+    const selectedElementTop = selectedElement.getBoundingClientRect().top - menuElementBoundingClientRect.top;
+    const maximumTopOffset = Math.max(0, rootElement.getBoundingClientRect().top - VIEWPORT_MARGIN);
+    menuElement.style.top = `${-1 * Math.min(selectedElementTop, maximumTopOffset)}px`;
+  }
+  var INVALID_ID, ITEM_ID_DATA_ATTRIBUTE_NAME, VIEWPORT_MARGIN;
+  var init_dropdown2 = __esm({
+    "node_modules/@create-figma-plugin/ui/lib/components/dropdown/dropdown.js"() {
+      init_preact_module();
+      init_hooks_module();
+      init_menu();
+      init_use_mouse_down_outside();
+      init_use_scrollable_menu();
+      init_create_class_name();
+      init_get_current_from_ref();
+      init_icon_control_chevron_down_8();
+      init_icon_menu_checkmark_checked_16();
+      init_dropdown();
+      INVALID_ID = null;
+      ITEM_ID_DATA_ATTRIBUTE_NAME = "data-dropdown-item-id";
+      VIEWPORT_MARGIN = 16;
+    }
+  });
+
+  // node_modules/@create-figma-plugin/ui/lib/components/icon/icon-16/icon-arrow-left-16.js
+  var IconArrowLeft16;
+  var init_icon_arrow_left_16 = __esm({
+    "node_modules/@create-figma-plugin/ui/lib/components/icon/icon-16/icon-arrow-left-16.js"() {
+      init_create_icon();
+      IconArrowLeft16 = createIcon("m2.29291 8.00001.35355-.35356 3-3 .70711.70711-2.14645 2.14645H12.5v1H4.20712l2.14645 2.14649-.70711.7071-3-3.00004-.35355-.35355Z", { height: 16, width: 16 });
+    }
+  });
+
+  // ../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/c811c34a-95c4-4858-a7e4-64afc930d53d/container.js
   var container_default;
   var init_container = __esm({
-    "../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/3d13552a-6193-4b36-8176-4ccdc9519ff2/container.js"() {
-      if (document.getElementById("e1ca8b579a") === null) {
+    "../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/c811c34a-95c4-4858-a7e4-64afc930d53d/container.js"() {
+      if (document.getElementById("951d27024c") === null) {
         const element = document.createElement("style");
-        element.id = "e1ca8b579a";
+        element.id = "951d27024c";
         element.textContent = `._extraSmall_kslv9_1 {
   padding: 0 var(--space-extra-small);
 }
@@ -712,13 +1278,13 @@
     }
   });
 
-  // ../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/3b3c6ff0-38e5-4eb0-9b3d-fb5241477f58/vertical-space.js
+  // ../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/4face2e1-e7db-4b64-9ac6-57cae6a687a1/vertical-space.js
   var vertical_space_default;
   var init_vertical_space = __esm({
-    "../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/3b3c6ff0-38e5-4eb0-9b3d-fb5241477f58/vertical-space.js"() {
-      if (document.getElementById("224ed4c8da") === null) {
+    "../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/4face2e1-e7db-4b64-9ac6-57cae6a687a1/vertical-space.js"() {
+      if (document.getElementById("a043008ed2") === null) {
         const element = document.createElement("style");
-        element.id = "224ed4c8da";
+        element.id = "a043008ed2";
         element.textContent = `._extraSmall_1f9m3_1 {
   height: var(--space-extra-small);
 }
@@ -758,6 +1324,241 @@
     }
   });
 
+  // ../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/54372740-c4db-4dc4-91de-f1738de3e26b/text.js
+  var text_default;
+  var init_text = __esm({
+    "../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/54372740-c4db-4dc4-91de-f1738de3e26b/text.js"() {
+      if (document.getElementById("b4d79e7dc0") === null) {
+        const element = document.createElement("style");
+        element.id = "b4d79e7dc0";
+        element.textContent = `._text_wg7jj_1 {
+  padding-top: 1px;
+  color: var(--color-black-80);
+  pointer-events: none;
+  transform: translateY(4px);
+}
+._text_wg7jj_1:before {
+  display: block;
+  height: 0;
+  margin-top: -9px;
+  content: '';
+  pointer-events: none;
+}
+._text_wg7jj_1 strong {
+  font-weight: var(--font-weight-bold);
+}
+._text_wg7jj_1 a {
+  color: var(--color-accent);
+  pointer-events: all;
+  text-decoration: none;
+}
+._text_wg7jj_1 a:hover {
+  text-decoration: underline;
+}
+._text_wg7jj_1 a:focus {
+  background-color: var(--color-blue-30-translucent);
+  border-radius: var(--border-radius-2);
+  outline: 0;
+}
+._text_wg7jj_1 code {
+  font-family: var(--font-family-code);
+}
+
+._bold_wg7jj_34 {
+  font-weight: var(--font-weight-bold);
+}
+
+._muted_wg7jj_38 {
+  color: var(--color-black-30);
+}
+
+._numeric_wg7jj_42 {
+  font-variant-numeric: tabular-nums;
+}
+
+._left_wg7jj_46 {
+  text-align: left;
+}
+
+._center_wg7jj_50 {
+  text-align: center;
+}
+
+._right_wg7jj_54 {
+  text-align: right;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm5vZGVfbW9kdWxlcy9AY3JlYXRlLWZpZ21hLXBsdWdpbi91aS9saWIvY29tcG9uZW50cy90ZXh0L3RleHQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsZ0JBQWdCO0VBQ2hCLDRCQUE0QjtFQUM1QixvQkFBb0I7RUFDcEIsMEJBQTBCO0FBQzVCO0FBQ0E7RUFDRSxjQUFjO0VBQ2QsU0FBUztFQUNULGdCQUFnQjtFQUNoQixXQUFXO0VBQ1gsb0JBQW9CO0FBQ3RCO0FBQ0E7RUFDRSxvQ0FBb0M7QUFDdEM7QUFDQTtFQUNFLDBCQUEwQjtFQUMxQixtQkFBbUI7RUFDbkIscUJBQXFCO0FBQ3ZCO0FBQ0E7RUFDRSwwQkFBMEI7QUFDNUI7QUFDQTtFQUNFLGtEQUFrRDtFQUNsRCxxQ0FBcUM7RUFDckMsVUFBVTtBQUNaO0FBQ0E7RUFDRSxvQ0FBb0M7QUFDdEM7O0FBRUE7RUFDRSxvQ0FBb0M7QUFDdEM7O0FBRUE7RUFDRSw0QkFBNEI7QUFDOUI7O0FBRUE7RUFDRSxrQ0FBa0M7QUFDcEM7O0FBRUE7RUFDRSxnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSxpQkFBaUI7QUFDbkIiLCJmaWxlIjoibm9kZV9tb2R1bGVzL0BjcmVhdGUtZmlnbWEtcGx1Z2luL3VpL2xpYi9jb21wb25lbnRzL3RleHQvdGV4dC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIudGV4dCB7XG4gIHBhZGRpbmctdG9wOiAxcHg7XG4gIGNvbG9yOiB2YXIoLS1jb2xvci1ibGFjay04MCk7XG4gIHBvaW50ZXItZXZlbnRzOiBub25lO1xuICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoNHB4KTtcbn1cbi50ZXh0OmJlZm9yZSB7XG4gIGRpc3BsYXk6IGJsb2NrO1xuICBoZWlnaHQ6IDA7XG4gIG1hcmdpbi10b3A6IC05cHg7XG4gIGNvbnRlbnQ6ICcnO1xuICBwb2ludGVyLWV2ZW50czogbm9uZTtcbn1cbi50ZXh0IHN0cm9uZyB7XG4gIGZvbnQtd2VpZ2h0OiB2YXIoLS1mb250LXdlaWdodC1ib2xkKTtcbn1cbi50ZXh0IGEge1xuICBjb2xvcjogdmFyKC0tY29sb3ItYWNjZW50KTtcbiAgcG9pbnRlci1ldmVudHM6IGFsbDtcbiAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xufVxuLnRleHQgYTpob3ZlciB7XG4gIHRleHQtZGVjb3JhdGlvbjogdW5kZXJsaW5lO1xufVxuLnRleHQgYTpmb2N1cyB7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWNvbG9yLWJsdWUtMzAtdHJhbnNsdWNlbnQpO1xuICBib3JkZXItcmFkaXVzOiB2YXIoLS1ib3JkZXItcmFkaXVzLTIpO1xuICBvdXRsaW5lOiAwO1xufVxuLnRleHQgY29kZSB7XG4gIGZvbnQtZmFtaWx5OiB2YXIoLS1mb250LWZhbWlseS1jb2RlKTtcbn1cblxuLmJvbGQge1xuICBmb250LXdlaWdodDogdmFyKC0tZm9udC13ZWlnaHQtYm9sZCk7XG59XG5cbi5tdXRlZCB7XG4gIGNvbG9yOiB2YXIoLS1jb2xvci1ibGFjay0zMCk7XG59XG5cbi5udW1lcmljIHtcbiAgZm9udC12YXJpYW50LW51bWVyaWM6IHRhYnVsYXItbnVtcztcbn1cblxuLmxlZnQge1xuICB0ZXh0LWFsaWduOiBsZWZ0O1xufVxuXG4uY2VudGVyIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG4ucmlnaHQge1xuICB0ZXh0LWFsaWduOiByaWdodDtcbn1cbiJdfQ== */`;
+        document.head.append(element);
+      }
+      text_default = { "text": "_text_wg7jj_1", "bold": "_bold_wg7jj_34", "muted": "_muted_wg7jj_38", "numeric": "_numeric_wg7jj_42", "left": "_left_wg7jj_46", "center": "_center_wg7jj_50", "right": "_right_wg7jj_54" };
+    }
+  });
+
+  // node_modules/@create-figma-plugin/ui/lib/components/text/text.js
+  function Text(_a) {
+    var _b = _a, { align = "left", bold = false, children, muted = false, numeric = false } = _b, rest = __objRest(_b, ["align", "bold", "children", "muted", "numeric"]);
+    return v("div", __spreadProps(__spreadValues({}, rest), { class: createClassName([
+      text_default.text,
+      text_default[align],
+      bold === true ? text_default.bold : null,
+      muted === true ? text_default.muted : null,
+      numeric === true ? text_default.numeric : null
+    ]) }), children);
+  }
+  var init_text2 = __esm({
+    "node_modules/@create-figma-plugin/ui/lib/components/text/text.js"() {
+      init_preact_module();
+      init_create_class_name();
+      init_text();
+    }
+  });
+
+  // ../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/746f240f-16f8-4647-aadf-7128636f1772/segmented-control.js
+  var segmented_control_default;
+  var init_segmented_control = __esm({
+    "../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/746f240f-16f8-4647-aadf-7128636f1772/segmented-control.js"() {
+      if (document.getElementById("3f14776336") === null) {
+        const element = document.createElement("style");
+        element.id = "3f14776336";
+        element.textContent = `._segmentedControl_1mr04_1 {
+  position: relative;
+  z-index: var(--z-index-1);
+  display: inline-block;
+  border-radius: var(--border-radius-2);
+}
+._disabled_1mr04_7 {
+  opacity: var(--opacity-30);
+}
+
+._labels_1mr04_11 {
+  display: flex;
+}
+
+._label_1mr04_11 {
+  position: relative;
+  display: block;
+}
+
+._input_1mr04_20 {
+  /* These rules are needed to ensure that focus remains within \`.segmentedControl\` */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+._disabled_1mr04_7 ._input_1mr04_20 {
+  cursor: not-allowed;
+}
+
+._children_1mr04_35 {
+  display: flex;
+  min-width: 24px;
+  height: 24px;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-black-80);
+  cursor: not-allowed;
+}
+._input_1mr04_20:checked ~ ._children_1mr04_35 {
+  background-color: var(--color-silver);
+  border-radius: var(--border-radius-2);
+}
+._input_1mr04_20:disabled ~ ._children_1mr04_35 {
+  opacity: var(--opacity-30);
+}
+._segmentedControl_1mr04_1:not(._disabled_1mr04_7):hover ._input_1mr04_20:checked ~ ._children_1mr04_35,
+._segmentedControl_1mr04_1:not(._disabled_1mr04_7):focus-within ._input_1mr04_20:checked ~ ._children_1mr04_35 {
+  border-radius: 0;
+}
+._segmentedControl_1mr04_1:not(._disabled_1mr04_7):hover
+  ._label_1mr04_11:first-child
+  ._input_1mr04_20:checked
+  ~ ._children_1mr04_35 {
+  border-bottom-left-radius: var(--border-radius-2);
+  border-top-left-radius: var(--border-radius-2);
+}
+._segmentedControl_1mr04_1:not(._disabled_1mr04_7):hover
+  ._label_1mr04_11:last-child
+  ._input_1mr04_20:checked
+  ~ ._children_1mr04_35 {
+  border-bottom-right-radius: var(--border-radius-2);
+  border-top-right-radius: var(--border-radius-2);
+}
+
+._text_1mr04_70 {
+  padding: 4px 10px;
+}
+
+._border_1mr04_74 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--border-radius-2);
+  pointer-events: none;
+}
+._segmentedControl_1mr04_1:not(._disabled_1mr04_7):hover ._border_1mr04_74 {
+  border: 1px solid var(--color-silver);
+}
+._segmentedControl_1mr04_1:not(._disabled_1mr04_7):focus-within ._border_1mr04_74 {
+  top: -1px;
+  bottom: -1px;
+  border: 2px solid var(--color-accent);
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm5vZGVfbW9kdWxlcy9AY3JlYXRlLWZpZ21hLXBsdWdpbi91aS9saWIvY29tcG9uZW50cy9zZWdtZW50ZWQtY29udHJvbC9zZWdtZW50ZWQtY29udHJvbC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxrQkFBa0I7RUFDbEIseUJBQXlCO0VBQ3pCLHFCQUFxQjtFQUNyQixxQ0FBcUM7QUFDdkM7QUFDQTtFQUNFLDBCQUEwQjtBQUM1Qjs7QUFFQTtFQUNFLGFBQWE7QUFDZjs7QUFFQTtFQUNFLGtCQUFrQjtFQUNsQixjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsbUZBQW1GO0VBQ25GLGtCQUFrQjtFQUNsQixNQUFNO0VBQ04sUUFBUTtFQUNSLFNBQVM7RUFDVCxPQUFPO0VBQ1AsY0FBYztFQUNkLFdBQVc7RUFDWCxZQUFZO0FBQ2Q7QUFDQTtFQUNFLG1CQUFtQjtBQUNyQjs7QUFFQTtFQUNFLGFBQWE7RUFDYixlQUFlO0VBQ2YsWUFBWTtFQUNaLG1CQUFtQjtFQUNuQix1QkFBdUI7RUFDdkIsNEJBQTRCO0VBQzVCLG1CQUFtQjtBQUNyQjtBQUNBO0VBQ0UscUNBQXFDO0VBQ3JDLHFDQUFxQztBQUN2QztBQUNBO0VBQ0UsMEJBQTBCO0FBQzVCO0FBQ0E7O0VBRUUsZ0JBQWdCO0FBQ2xCO0FBQ0E7Ozs7RUFJRSxpREFBaUQ7RUFDakQsOENBQThDO0FBQ2hEO0FBQ0E7Ozs7RUFJRSxrREFBa0Q7RUFDbEQsK0NBQStDO0FBQ2pEOztBQUVBO0VBQ0UsaUJBQWlCO0FBQ25COztBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLE1BQU07RUFDTixRQUFRO0VBQ1IsU0FBUztFQUNULE9BQU87RUFDUCxxQ0FBcUM7RUFDckMsb0JBQW9CO0FBQ3RCO0FBQ0E7RUFDRSxxQ0FBcUM7QUFDdkM7QUFDQTtFQUNFLFNBQVM7RUFDVCxZQUFZO0VBQ1oscUNBQXFDO0FBQ3ZDIiwiZmlsZSI6Im5vZGVfbW9kdWxlcy9AY3JlYXRlLWZpZ21hLXBsdWdpbi91aS9saWIvY29tcG9uZW50cy9zZWdtZW50ZWQtY29udHJvbC9zZWdtZW50ZWQtY29udHJvbC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuc2VnbWVudGVkQ29udHJvbCB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgei1pbmRleDogdmFyKC0tei1pbmRleC0xKTtcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICBib3JkZXItcmFkaXVzOiB2YXIoLS1ib3JkZXItcmFkaXVzLTIpO1xufVxuLmRpc2FibGVkIHtcbiAgb3BhY2l0eTogdmFyKC0tb3BhY2l0eS0zMCk7XG59XG5cbi5sYWJlbHMge1xuICBkaXNwbGF5OiBmbGV4O1xufVxuXG4ubGFiZWwge1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIGRpc3BsYXk6IGJsb2NrO1xufVxuXG4uaW5wdXQge1xuICAvKiBUaGVzZSBydWxlcyBhcmUgbmVlZGVkIHRvIGVuc3VyZSB0aGF0IGZvY3VzIHJlbWFpbnMgd2l0aGluIGAuc2VnbWVudGVkQ29udHJvbGAgKi9cbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB0b3A6IDA7XG4gIHJpZ2h0OiAwO1xuICBib3R0b206IDA7XG4gIGxlZnQ6IDA7XG4gIGRpc3BsYXk6IGJsb2NrO1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAxMDAlO1xufVxuLmRpc2FibGVkIC5pbnB1dCB7XG4gIGN1cnNvcjogbm90LWFsbG93ZWQ7XG59XG5cbi5jaGlsZHJlbiB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIG1pbi13aWR0aDogMjRweDtcbiAgaGVpZ2h0OiAyNHB4O1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgY29sb3I6IHZhcigtLWNvbG9yLWJsYWNrLTgwKTtcbiAgY3Vyc29yOiBub3QtYWxsb3dlZDtcbn1cbi5pbnB1dDpjaGVja2VkIH4gLmNoaWxkcmVuIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tY29sb3Itc2lsdmVyKTtcbiAgYm9yZGVyLXJhZGl1czogdmFyKC0tYm9yZGVyLXJhZGl1cy0yKTtcbn1cbi5pbnB1dDpkaXNhYmxlZCB+IC5jaGlsZHJlbiB7XG4gIG9wYWNpdHk6IHZhcigtLW9wYWNpdHktMzApO1xufVxuLnNlZ21lbnRlZENvbnRyb2w6bm90KC5kaXNhYmxlZCk6aG92ZXIgLmlucHV0OmNoZWNrZWQgfiAuY2hpbGRyZW4sXG4uc2VnbWVudGVkQ29udHJvbDpub3QoLmRpc2FibGVkKTpmb2N1cy13aXRoaW4gLmlucHV0OmNoZWNrZWQgfiAuY2hpbGRyZW4ge1xuICBib3JkZXItcmFkaXVzOiAwO1xufVxuLnNlZ21lbnRlZENvbnRyb2w6bm90KC5kaXNhYmxlZCk6aG92ZXJcbiAgLmxhYmVsOmZpcnN0LWNoaWxkXG4gIC5pbnB1dDpjaGVja2VkXG4gIH4gLmNoaWxkcmVuIHtcbiAgYm9yZGVyLWJvdHRvbS1sZWZ0LXJhZGl1czogdmFyKC0tYm9yZGVyLXJhZGl1cy0yKTtcbiAgYm9yZGVyLXRvcC1sZWZ0LXJhZGl1czogdmFyKC0tYm9yZGVyLXJhZGl1cy0yKTtcbn1cbi5zZWdtZW50ZWRDb250cm9sOm5vdCguZGlzYWJsZWQpOmhvdmVyXG4gIC5sYWJlbDpsYXN0LWNoaWxkXG4gIC5pbnB1dDpjaGVja2VkXG4gIH4gLmNoaWxkcmVuIHtcbiAgYm9yZGVyLWJvdHRvbS1yaWdodC1yYWRpdXM6IHZhcigtLWJvcmRlci1yYWRpdXMtMik7XG4gIGJvcmRlci10b3AtcmlnaHQtcmFkaXVzOiB2YXIoLS1ib3JkZXItcmFkaXVzLTIpO1xufVxuXG4udGV4dCB7XG4gIHBhZGRpbmc6IDRweCAxMHB4O1xufVxuXG4uYm9yZGVyIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB0b3A6IDA7XG4gIHJpZ2h0OiAwO1xuICBib3R0b206IDA7XG4gIGxlZnQ6IDA7XG4gIGJvcmRlci1yYWRpdXM6IHZhcigtLWJvcmRlci1yYWRpdXMtMik7XG4gIHBvaW50ZXItZXZlbnRzOiBub25lO1xufVxuLnNlZ21lbnRlZENvbnRyb2w6bm90KC5kaXNhYmxlZCk6aG92ZXIgLmJvcmRlciB7XG4gIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWNvbG9yLXNpbHZlcik7XG59XG4uc2VnbWVudGVkQ29udHJvbDpub3QoLmRpc2FibGVkKTpmb2N1cy13aXRoaW4gLmJvcmRlciB7XG4gIHRvcDogLTFweDtcbiAgYm90dG9tOiAtMXB4O1xuICBib3JkZXI6IDJweCBzb2xpZCB2YXIoLS1jb2xvci1hY2NlbnQpO1xufVxuIl19 */`;
+        document.head.append(element);
+      }
+      segmented_control_default = { "segmentedControl": "_segmentedControl_1mr04_1", "disabled": "_disabled_1mr04_7", "labels": "_labels_1mr04_11", "label": "_label_1mr04_11", "input": "_input_1mr04_20", "children": "_children_1mr04_35", "text": "_text_1mr04_70", "border": "_border_1mr04_74" };
+    }
+  });
+
+  // node_modules/@create-figma-plugin/ui/lib/components/segmented-control/segmented-control.js
+  function SegmentedControl(_a) {
+    var _b = _a, { disabled = false, name, onChange = function() {
+    }, onValueChange = function() {
+    }, options, propagateEscapeKeyDown = true, value } = _b, rest = __objRest(_b, ["disabled", "name", "onChange", "onValueChange", "options", "propagateEscapeKeyDown", "value"]);
+    const handleChange = F(function(event) {
+      const id = event.currentTarget.getAttribute(ITEM_ID_DATA_ATTRIBUTE_NAME2);
+      const newValue = options[parseInt(id, 10)].value;
+      onValueChange(newValue, name);
+      onChange(event);
+    }, [name, onChange, onValueChange, options]);
+    const handleKeyDown = F(function(event) {
+      if (event.key !== "Escape") {
+        return;
+      }
+      if (propagateEscapeKeyDown === false) {
+        event.stopPropagation();
+      }
+      event.currentTarget.blur();
+    }, [propagateEscapeKeyDown]);
+    return v("div", { class: createClassName([
+      segmented_control_default.segmentedControl,
+      disabled === true ? segmented_control_default.disabled : null
+    ]) }, v("div", { class: segmented_control_default.labels }, options.map(function(option, index) {
+      const children = typeof option.children === "undefined" ? `${option.value}` : option.children;
+      const isOptionDisabled = disabled === true || option.disabled === true;
+      return v("label", { key: index, class: segmented_control_default.label }, v("input", __spreadValues(__spreadProps(__spreadValues({}, rest), { checked: value === option.value, class: segmented_control_default.input, disabled: isOptionDisabled === true, name, onChange: handleChange, onKeyDown: handleKeyDown, tabIndex: isOptionDisabled === true ? -1 : 0, type: "radio", value: `${option.value}` }), { [ITEM_ID_DATA_ATTRIBUTE_NAME2]: `${index}` })), v("div", { class: segmented_control_default.children }, v("div", { class: typeof children === "string" ? segmented_control_default.text : void 0 }, children)));
+    })), v("div", { class: segmented_control_default.border }));
+  }
+  var ITEM_ID_DATA_ATTRIBUTE_NAME2;
+  var init_segmented_control2 = __esm({
+    "node_modules/@create-figma-plugin/ui/lib/components/segmented-control/segmented-control.js"() {
+      init_preact_module();
+      init_hooks_module();
+      init_create_class_name();
+      init_segmented_control();
+      ITEM_ID_DATA_ATTRIBUTE_NAME2 = "data-segmented-control-item-id";
+    }
+  });
+
   // node_modules/@create-figma-plugin/utilities/lib/events.js
   function invokeEventHandler(name, args) {
     for (const id in eventHandlers) {
@@ -790,276 +1591,19 @@
     }
   });
 
-  // node_modules/@create-figma-plugin/utilities/lib/mixed-values.js
-  var MIXED_STRING;
-  var init_mixed_values = __esm({
-    "node_modules/@create-figma-plugin/utilities/lib/mixed-values.js"() {
-      MIXED_STRING = "999999999999999";
-    }
-  });
-
   // node_modules/@create-figma-plugin/utilities/lib/index.js
   var init_lib = __esm({
     "node_modules/@create-figma-plugin/utilities/lib/index.js"() {
       init_events();
-      init_mixed_values();
     }
   });
 
-  // node_modules/@create-figma-plugin/ui/lib/components/textbox/private/is-keycode-character-generating.js
-  function isKeyCodeCharacterGenerating(keyCode) {
-    return keyCode === 32 || keyCode >= 48 && keyCode <= 57 || keyCode >= 65 && keyCode <= 90 || keyCode >= 96 && keyCode <= 105 || keyCode >= 186 && keyCode <= 192 || keyCode >= 219 && keyCode <= 222;
-  }
-  var init_is_keycode_character_generating = __esm({
-    "node_modules/@create-figma-plugin/ui/lib/components/textbox/private/is-keycode-character-generating.js"() {
-    }
-  });
-
-  // node_modules/@create-figma-plugin/ui/lib/components/textbox/textbox/private/raw-textbox.js
-  function RawTextbox(_a) {
-    var _b = _a, { disabled = false, name, onInput = function() {
-    }, onValueInput = function() {
-    }, password = false, placeholder, propagateEscapeKeyDown = true, revertOnEscapeKeyDown = false, spellCheck = false, validateOnBlur, value } = _b, rest = __objRest(_b, ["disabled", "name", "onInput", "onValueInput", "password", "placeholder", "propagateEscapeKeyDown", "revertOnEscapeKeyDown", "spellCheck", "validateOnBlur", "value"]);
-    const inputElementRef = s2(null);
-    const isRevertOnEscapeKeyDownRef = s2(false);
-    const [originalValue, setOriginalValue] = l2(EMPTY_STRING);
-    const setInputElementValue = F(function(value2) {
-      const inputElement = getCurrentFromRef(inputElementRef);
-      inputElement.value = value2;
-      const inputEvent = document.createEvent("Event");
-      inputEvent.initEvent("input", true, true);
-      inputElement.dispatchEvent(inputEvent);
-    }, []);
-    const handleBlur = F(function() {
-      if (isRevertOnEscapeKeyDownRef.current === true) {
-        isRevertOnEscapeKeyDownRef.current = false;
-        return;
-      }
-      if (typeof validateOnBlur !== "undefined") {
-        const result = validateOnBlur(value);
-        if (typeof result === "string") {
-          setInputElementValue(result);
-          setOriginalValue(EMPTY_STRING);
-          return;
-        }
-        if (result === false) {
-          if (value !== originalValue) {
-            setInputElementValue(originalValue);
-          }
-          setOriginalValue(EMPTY_STRING);
-          return;
-        }
-      }
-      setOriginalValue(EMPTY_STRING);
-    }, [originalValue, setInputElementValue, validateOnBlur, value]);
-    const handleFocus = F(function(event) {
-      setOriginalValue(value);
-      event.currentTarget.select();
-    }, [value]);
-    const handleInput = F(function(event) {
-      onValueInput(event.currentTarget.value, name);
-      onInput(event);
-    }, [name, onInput, onValueInput]);
-    const handleKeyDown = F(function(event) {
-      const key = event.key;
-      if (key === "Escape") {
-        if (propagateEscapeKeyDown === false) {
-          event.stopPropagation();
-        }
-        if (revertOnEscapeKeyDown === true) {
-          isRevertOnEscapeKeyDownRef.current = true;
-          setInputElementValue(originalValue);
-          setOriginalValue(EMPTY_STRING);
-        }
-        event.currentTarget.blur();
-        return;
-      }
-      if (key === "Enter") {
-        event.currentTarget.blur();
-        return;
-      }
-      if (value === MIXED_STRING && isKeyCodeCharacterGenerating(event.keyCode) === false) {
-        event.preventDefault();
-        event.currentTarget.select();
-      }
-    }, [
-      originalValue,
-      propagateEscapeKeyDown,
-      revertOnEscapeKeyDown,
-      setInputElementValue,
-      value
-    ]);
-    const handleMouseUp = F(function(event) {
-      if (value === MIXED_STRING) {
-        event.preventDefault();
-      }
-    }, [value]);
-    return v("input", __spreadProps(__spreadValues({}, rest), { ref: inputElementRef, disabled: disabled === true, name, onBlur: handleBlur, onFocus: handleFocus, onInput: handleInput, onKeyDown: handleKeyDown, onMouseUp: handleMouseUp, placeholder, spellcheck: spellCheck, tabIndex: disabled === true ? -1 : 0, type: password === true ? "password" : "text", value: value === MIXED_STRING ? "Mixed" : value }));
-  }
-  var EMPTY_STRING;
-  var init_raw_textbox = __esm({
-    "node_modules/@create-figma-plugin/ui/lib/components/textbox/textbox/private/raw-textbox.js"() {
-      init_lib();
-      init_preact_module();
-      init_hooks_module();
-      init_get_current_from_ref();
-      init_is_keycode_character_generating();
-      EMPTY_STRING = "";
-    }
-  });
-
-  // ../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/287d91bf-3177-4d18-9ba5-2f431e815b4a/textbox.js
-  var textbox_default;
-  var init_textbox = __esm({
-    "../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/287d91bf-3177-4d18-9ba5-2f431e815b4a/textbox.js"() {
-      if (document.getElementById("875d2a731d") === null) {
-        const element = document.createElement("style");
-        element.id = "875d2a731d";
-        element.textContent = `._textbox_1oiya_1 {
-  position: relative;
-  z-index: var(--z-index-1);
-}
-._textbox_1oiya_1:focus-within {
-  z-index: var(--z-index-2); /* Stack \`.textbox\` over its sibling elements */
-}
-._disabled_1oiya_8 {
-  opacity: var(--opacity-30);
-}
-
-._input_1oiya_12 {
-  display: block;
-  width: 100%;
-  height: 28px;
-  padding-left: var(--space-extra-small);
-  background-color: transparent;
-  color: var(--color-black-80);
-}
-._hasIcon_1oiya_20 ._input_1oiya_12 {
-  padding-left: 32px;
-}
-._disabled_1oiya_8 ._input_1oiya_12 {
-  cursor: not-allowed;
-}
-
-._input_1oiya_12::placeholder {
-  color: var(--color-black-30);
-}
-
-._input_1oiya_12::-webkit-inner-spin-button,
-._input_1oiya_12::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-}
-
-._icon_1oiya_36 {
-  position: absolute;
-  top: 14px;
-  left: 16px;
-  color: var(--color-black-30);
-  pointer-events: none; /* so that clicking the icon focuses the textbox */
-  text-align: center;
-  transform: translate(-50%, -50%);
-}
-._textbox_1oiya_1:not(._disabled_1oiya_8) ._input_1oiya_12:focus ~ ._icon_1oiya_36 {
-  color: var(--color-accent);
-}
-._icon_1oiya_36 svg {
-  fill: currentColor;
-}
-
-._border_1oiya_52 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  border-width: 1px;
-  border-color: var(--color-silver);
-  border-radius: var(--border-radius-2);
-  pointer-events: none;
-}
-._textbox_1oiya_1:not(._disabled_1oiya_8) ._input_1oiya_12:focus ~ ._border_1oiya_52 {
-  top: -1px;
-  bottom: -1px;
-  border-width: 2px;
-  border-color: var(--color-accent);
-}
-._noBorder_1oiya_69 ._border_1oiya_52 {
-  border-color: transparent;
-}
-._noBorder_1oiya_69:not(._disabled_1oiya_8):hover ._border_1oiya_52 {
-  border-color: var(--color-silver);
-}
-._noBorder_1oiya_69:not(._disabled_1oiya_8) ._input_1oiya_12:focus ~ ._border_1oiya_52 {
-  border-width: 2px;
-  border-color: var(--color-accent);
-}
-
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm5vZGVfbW9kdWxlcy9AY3JlYXRlLWZpZ21hLXBsdWdpbi91aS9saWIvY29tcG9uZW50cy90ZXh0Ym94L3RleHRib3gvdGV4dGJveC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxrQkFBa0I7RUFDbEIseUJBQXlCO0FBQzNCO0FBQ0E7RUFDRSx5QkFBeUIsRUFBRSwrQ0FBK0M7QUFDNUU7QUFDQTtFQUNFLDBCQUEwQjtBQUM1Qjs7QUFFQTtFQUNFLGNBQWM7RUFDZCxXQUFXO0VBQ1gsWUFBWTtFQUNaLHNDQUFzQztFQUN0Qyw2QkFBNkI7RUFDN0IsNEJBQTRCO0FBQzlCO0FBQ0E7RUFDRSxrQkFBa0I7QUFDcEI7QUFDQTtFQUNFLG1CQUFtQjtBQUNyQjs7QUFFQTtFQUNFLDRCQUE0QjtBQUM5Qjs7QUFFQTs7RUFFRSx3QkFBd0I7QUFDMUI7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsU0FBUztFQUNULFVBQVU7RUFDViw0QkFBNEI7RUFDNUIsb0JBQW9CLEVBQUUsa0RBQWtEO0VBQ3hFLGtCQUFrQjtFQUNsQixnQ0FBZ0M7QUFDbEM7QUFDQTtFQUNFLDBCQUEwQjtBQUM1QjtBQUNBO0VBQ0Usa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLE1BQU07RUFDTixRQUFRO0VBQ1IsU0FBUztFQUNULE9BQU87RUFDUCxpQkFBaUI7RUFDakIsaUNBQWlDO0VBQ2pDLHFDQUFxQztFQUNyQyxvQkFBb0I7QUFDdEI7QUFDQTtFQUNFLFNBQVM7RUFDVCxZQUFZO0VBQ1osaUJBQWlCO0VBQ2pCLGlDQUFpQztBQUNuQztBQUNBO0VBQ0UseUJBQXlCO0FBQzNCO0FBQ0E7RUFDRSxpQ0FBaUM7QUFDbkM7QUFDQTtFQUNFLGlCQUFpQjtFQUNqQixpQ0FBaUM7QUFDbkMiLCJmaWxlIjoibm9kZV9tb2R1bGVzL0BjcmVhdGUtZmlnbWEtcGx1Z2luL3VpL2xpYi9jb21wb25lbnRzL3RleHRib3gvdGV4dGJveC90ZXh0Ym94LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi50ZXh0Ym94IHtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICB6LWluZGV4OiB2YXIoLS16LWluZGV4LTEpO1xufVxuLnRleHRib3g6Zm9jdXMtd2l0aGluIHtcbiAgei1pbmRleDogdmFyKC0tei1pbmRleC0yKTsgLyogU3RhY2sgYC50ZXh0Ym94YCBvdmVyIGl0cyBzaWJsaW5nIGVsZW1lbnRzICovXG59XG4uZGlzYWJsZWQge1xuICBvcGFjaXR5OiB2YXIoLS1vcGFjaXR5LTMwKTtcbn1cblxuLmlucHV0IHtcbiAgZGlzcGxheTogYmxvY2s7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDI4cHg7XG4gIHBhZGRpbmctbGVmdDogdmFyKC0tc3BhY2UtZXh0cmEtc21hbGwpO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDtcbiAgY29sb3I6IHZhcigtLWNvbG9yLWJsYWNrLTgwKTtcbn1cbi5oYXNJY29uIC5pbnB1dCB7XG4gIHBhZGRpbmctbGVmdDogMzJweDtcbn1cbi5kaXNhYmxlZCAuaW5wdXQge1xuICBjdXJzb3I6IG5vdC1hbGxvd2VkO1xufVxuXG4uaW5wdXQ6OnBsYWNlaG9sZGVyIHtcbiAgY29sb3I6IHZhcigtLWNvbG9yLWJsYWNrLTMwKTtcbn1cblxuLmlucHV0Ojotd2Via2l0LWlubmVyLXNwaW4tYnV0dG9uLFxuLmlucHV0Ojotd2Via2l0LW91dGVyLXNwaW4tYnV0dG9uIHtcbiAgLXdlYmtpdC1hcHBlYXJhbmNlOiBub25lO1xufVxuXG4uaWNvbiB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiAxNHB4O1xuICBsZWZ0OiAxNnB4O1xuICBjb2xvcjogdmFyKC0tY29sb3ItYmxhY2stMzApO1xuICBwb2ludGVyLWV2ZW50czogbm9uZTsgLyogc28gdGhhdCBjbGlja2luZyB0aGUgaWNvbiBmb2N1c2VzIHRoZSB0ZXh0Ym94ICovXG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG59XG4udGV4dGJveDpub3QoLmRpc2FibGVkKSAuaW5wdXQ6Zm9jdXMgfiAuaWNvbiB7XG4gIGNvbG9yOiB2YXIoLS1jb2xvci1hY2NlbnQpO1xufVxuLmljb24gc3ZnIHtcbiAgZmlsbDogY3VycmVudENvbG9yO1xufVxuXG4uYm9yZGVyIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB0b3A6IDA7XG4gIHJpZ2h0OiAwO1xuICBib3R0b206IDA7XG4gIGxlZnQ6IDA7XG4gIGJvcmRlci13aWR0aDogMXB4O1xuICBib3JkZXItY29sb3I6IHZhcigtLWNvbG9yLXNpbHZlcik7XG4gIGJvcmRlci1yYWRpdXM6IHZhcigtLWJvcmRlci1yYWRpdXMtMik7XG4gIHBvaW50ZXItZXZlbnRzOiBub25lO1xufVxuLnRleHRib3g6bm90KC5kaXNhYmxlZCkgLmlucHV0OmZvY3VzIH4gLmJvcmRlciB7XG4gIHRvcDogLTFweDtcbiAgYm90dG9tOiAtMXB4O1xuICBib3JkZXItd2lkdGg6IDJweDtcbiAgYm9yZGVyLWNvbG9yOiB2YXIoLS1jb2xvci1hY2NlbnQpO1xufVxuLm5vQm9yZGVyIC5ib3JkZXIge1xuICBib3JkZXItY29sb3I6IHRyYW5zcGFyZW50O1xufVxuLm5vQm9yZGVyOm5vdCguZGlzYWJsZWQpOmhvdmVyIC5ib3JkZXIge1xuICBib3JkZXItY29sb3I6IHZhcigtLWNvbG9yLXNpbHZlcik7XG59XG4ubm9Cb3JkZXI6bm90KC5kaXNhYmxlZCkgLmlucHV0OmZvY3VzIH4gLmJvcmRlciB7XG4gIGJvcmRlci13aWR0aDogMnB4O1xuICBib3JkZXItY29sb3I6IHZhcigtLWNvbG9yLWFjY2VudCk7XG59XG4iXX0= */`;
-        document.head.append(element);
-      }
-      textbox_default = { "textbox": "_textbox_1oiya_1", "disabled": "_disabled_1oiya_8", "input": "_input_1oiya_12", "hasIcon": "_hasIcon_1oiya_20", "icon": "_icon_1oiya_36", "border": "_border_1oiya_52", "noBorder": "_noBorder_1oiya_69" };
-    }
-  });
-
-  // node_modules/@create-figma-plugin/ui/lib/components/textbox/textbox/textbox.js
-  function Textbox(_a) {
-    var _b = _a, { icon, noBorder = false } = _b, rest = __objRest(_b, ["icon", "noBorder"]);
-    if (typeof icon === "string" && icon.length !== 1) {
-      throw new Error(`String \`icon\` must be a single character: ${icon}`);
-    }
-    return v("div", { class: createClassName([
-      textbox_default.textbox,
-      noBorder === true ? textbox_default.noBorder : null,
-      typeof icon === "undefined" ? null : textbox_default.hasIcon,
-      rest.disabled === true ? textbox_default.disabled : null
-    ]) }, v(RawTextbox, __spreadProps(__spreadValues({}, rest), { class: textbox_default.input })), typeof icon === "undefined" ? null : v("div", { class: textbox_default.icon }, icon), v("div", { class: textbox_default.border }));
-  }
-  var init_textbox2 = __esm({
-    "node_modules/@create-figma-plugin/ui/lib/components/textbox/textbox/textbox.js"() {
-      init_preact_module();
-      init_create_class_name();
-      init_raw_textbox();
-      init_textbox();
-    }
-  });
-
-  // node_modules/@create-figma-plugin/ui/lib/hooks/use-initial-focus/use-initial-focus.js
-  function useInitialFocus() {
-    y2(function() {
-      const focusableElements = document.querySelectorAll(`[${INITIAL_FOCUS_DATA_ATTRIBUTE_NAME}]`);
-      if (focusableElements.length === 0) {
-        throw new Error(`No element with attribute \`${INITIAL_FOCUS_DATA_ATTRIBUTE_NAME}\``);
-      }
-      if (focusableElements.length > 1) {
-        const checkedRadioButtonInputElement = Array.prototype.slice.call(focusableElements).find(function(focusableElement) {
-          const inputElement = focusableElement;
-          return inputElement.type === "radio" && inputElement.checked === true;
-        });
-        if (typeof checkedRadioButtonInputElement !== "undefined") {
-          checkedRadioButtonInputElement.focus();
-          return;
-        }
-      }
-      focusableElements[0].focus();
-    }, []);
-    return {
-      [INITIAL_FOCUS_DATA_ATTRIBUTE_NAME]: true
-    };
-  }
-  var INITIAL_FOCUS_DATA_ATTRIBUTE_NAME;
-  var init_use_initial_focus = __esm({
-    "node_modules/@create-figma-plugin/ui/lib/hooks/use-initial-focus/use-initial-focus.js"() {
-      init_hooks_module();
-      INITIAL_FOCUS_DATA_ATTRIBUTE_NAME = "data-initial-focus";
-    }
-  });
-
-  // ../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/f5c32b45-1ec6-4e68-b814-d61a936216a8/base.js
+  // ../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/6a7beb31-666b-45ce-836f-449918975f17/base.js
   var init_base = __esm({
-    "../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/f5c32b45-1ec6-4e68-b814-d61a936216a8/base.js"() {
-      if (document.getElementById("0640a4bd9f") === null) {
+    "../../../../../private/var/folders/br/8v45chv1577b5gwh46m3b6nw0000gn/T/6a7beb31-666b-45ce-836f-449918975f17/base.js"() {
+      if (document.getElementById("75f5aa611d") === null) {
         const element = document.createElement("style");
-        element.id = "0640a4bd9f";
+        element.id = "75f5aa611d";
         element.textContent = `@import url('https://fonts.googleapis.com/css?family=Inter:400,600&display=swap');
 
 :root {
@@ -1215,11 +1759,78 @@ svg {
   var init_lib2 = __esm({
     "node_modules/@create-figma-plugin/ui/lib/index.js"() {
       init_button2();
+      init_dropdown2();
+      init_icon_arrow_left_16();
       init_container2();
       init_vertical_space2();
-      init_textbox2();
-      init_use_initial_focus();
+      init_segmented_control2();
+      init_text2();
       init_render();
+    }
+  });
+
+  // src/components/icons/DeviceMobile16.tsx
+  function DeviceMobile16(props) {
+    if (props.background) {
+      return /* @__PURE__ */ v("svg", {
+        width: "16",
+        height: "16",
+        viewBox: "0 0 16 16",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg"
+      }, /* @__PURE__ */ v("rect", {
+        x: "2.5",
+        y: "4.5",
+        width: "11",
+        height: "6.87645",
+        rx: "1",
+        fill: "#ACACAC",
+        stroke: "#2C3A42",
+        "stroke-width": "0.85"
+      }));
+    } else {
+      return /* @__PURE__ */ v("svg", {
+        width: "16",
+        height: "16",
+        viewBox: "0 0 16 16",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg"
+      }, /* @__PURE__ */ v("rect", {
+        x: "2.5",
+        y: "4.5",
+        width: "11",
+        height: "6.87645",
+        rx: "1",
+        stroke: "#2C3A42",
+        "stroke-width": "0.85"
+      }));
+    }
+  }
+  var init_DeviceMobile16 = __esm({
+    "src/components/icons/DeviceMobile16.tsx"() {
+      init_preact_module();
+    }
+  });
+
+  // src/components/icons/None16.tsx
+  function None16() {
+    return /* @__PURE__ */ v("svg", {
+      width: "16",
+      height: "16",
+      viewBox: "0 0 16 16",
+      fill: "none",
+      xmlns: "http://www.w3.org/2000/svg"
+    }, /* @__PURE__ */ v("path", {
+      "fill-rule": "evenodd",
+      "clip-rule": "evenodd",
+      d: "M10 9H6V8H10V9Z",
+      fill: "black",
+      "fill-opacity": "0.8"
+    }));
+  }
+  var init_None16 = __esm({
+    "src/components/icons/None16.tsx"() {
+      init_preact_module();
     }
   });
 
@@ -1231,20 +1842,95 @@ svg {
   function Plugin(props) {
     const [type, setType] = l2(props.type);
     const [title, setTitle] = l2(props.title);
+    const [deviceType, setDeviceType] = l2("Mobile");
+    const deviceOptions = [
+      { value: "Mobile" },
+      { value: "Tablet" },
+      { value: "Desktop" }
+    ];
+    const [backgroundEnabled, setBackgroundEnabled] = l2("noBackground");
+    const [deviceBorderEnabled, setDeviceBorderEnabled] = l2("noBorder");
+    const backgroundOptions = [
+      { children: /* @__PURE__ */ v(None16, null), value: "background" },
+      { children: /* @__PURE__ */ v(DeviceMobile16, {
+        background: true
+      }), value: "noBackground" }
+    ];
+    const deviceBorderOptions = [
+      { children: /* @__PURE__ */ v(IconArrowLeft16, null), value: "noBorder" },
+      { children: /* @__PURE__ */ v(IconArrowLeft16, null), value: "border" }
+    ];
+    function handleBackgroundEnabledChange(event) {
+      const newValue = event.currentTarget.value;
+      console.log(newValue);
+      setBackgroundEnabled(newValue);
+    }
+    function handleDeviceBorderEnabledChange(event) {
+      const newValue = event.currentTarget.value;
+      console.log(newValue);
+      setDeviceBorderEnabled(newValue);
+    }
+    function handleDeviceTypeChange(event) {
+      const newValue = event.currentTarget.value;
+      console.log(newValue);
+      setDeviceType(newValue);
+    }
+    const [value, setMobileDevice] = l2("iPhone 8");
+    const mobileOptions = [
+      { header: "Apple" },
+      { value: "iPhone 8" },
+      { value: "iPhone 11" },
+      { value: "iPhone 11 Pro" },
+      { value: "iPhone 11 Pro Max" },
+      { separator: true },
+      { header: "Google" },
+      { value: "Pixel 3" },
+      { value: "Pixel 3 XL" },
+      { value: "Pixel 4" },
+      { value: "Pixel 4 XL" }
+    ];
+    function handleMobileChange(event) {
+      const newValue = event.currentTarget.value;
+      console.log(newValue);
+      setMobileDevice(newValue);
+    }
     const handleUpdateButtonClick = F(function() {
       emit("UPDATE_TYPE", type);
       emit("UPDATE_TITLE", title);
     }, [type, title]);
     return /* @__PURE__ */ v(Container, null, /* @__PURE__ */ v(VerticalSpace, {
       space: "large"
-    }), /* @__PURE__ */ v(Textbox, __spreadProps(__spreadValues({}, useInitialFocus()), {
-      onValueInput: setType,
-      value: type
-    })), /* @__PURE__ */ v(VerticalSpace, {
+    }), /* @__PURE__ */ v(Text, {
+      bold: true
+    }, "Device Type"), /* @__PURE__ */ v(VerticalSpace, {
       space: "large"
-    }), /* @__PURE__ */ v(Textbox, {
-      onValueInput: setTitle,
-      value: title
+    }), /* @__PURE__ */ v("div", {
+      style: "display: flex; justify-content: space-between; align-items: center;"
+    }, /* @__PURE__ */ v(Dropdown, {
+      noBorder: true,
+      icon: /* @__PURE__ */ v(IconArrowLeft16, null),
+      onChange: handleDeviceTypeChange,
+      options: deviceOptions,
+      value: deviceType
+    }), /* @__PURE__ */ v(SegmentedControl, {
+      onChange: handleBackgroundEnabledChange,
+      options: backgroundOptions,
+      value: backgroundEnabled
+    })), /* @__PURE__ */ v(VerticalSpace, {
+      space: "small"
+    }), /* @__PURE__ */ v("div", {
+      style: "display: flex; justify-content: space-between; align-items: center;"
+    }, /* @__PURE__ */ v(Text, null, "Enable Device Border"), /* @__PURE__ */ v(SegmentedControl, {
+      onChange: handleDeviceBorderEnabledChange,
+      options: deviceBorderOptions,
+      value: deviceBorderEnabled
+    })), /* @__PURE__ */ v(VerticalSpace, {
+      space: "small"
+    }), /* @__PURE__ */ v(Dropdown, {
+      icon: /* @__PURE__ */ v(IconArrowLeft16, null),
+      onChange: handleMobileChange,
+      options: mobileOptions,
+      value
     }), /* @__PURE__ */ v(VerticalSpace, {
       space: "large"
     }), /* @__PURE__ */ v(Button, {
@@ -1261,6 +1947,8 @@ svg {
       init_lib();
       init_preact_module();
       init_hooks_module();
+      init_DeviceMobile16();
+      init_None16();
       ui_default = render(Plugin);
     }
   });
