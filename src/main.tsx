@@ -14,6 +14,10 @@ function DeviceFrames () {
 
   const [title, setTitle] = useSyncedState("title", "Title")
 
+  const [deviceType, setDeviceType] = useSyncedState("deviceType", "Mobile")
+
+  const [backgroundEnabled, setBackgroundEnabled] = useSyncedState("backgroundEnabled", "noBackground")
+
   const items: Array<WidgetPropertyMenuItem> = [
     {
       itemType: 'action',
@@ -52,6 +56,23 @@ function DeviceFrames () {
         once('UPDATE_TITLE', function (title: string): void {
           setTitle(title); resolve();
         })
+
+        once('UPDATE_DEVICETYPE', function (type: string): void {
+          setDeviceType(type); resolve();
+        })
+
+        once('UPDATE_BACKGROUND_ENABLED', function (value: string): void {
+          setBackgroundEnabled(value); resolve();
+        })
+        
+        // 
+        // 
+
+        // UPDATE_DEVICEBORDER_ENABLED
+        // const [deviceBorderEnabled, setDeviceBorderEnabled] = useState('noBorder')
+
+        // UPDATE_DEVICE
+        // const [device, setCurrentDevice] = useState('iPhone 8')
       }
     })
   }
@@ -77,7 +98,7 @@ function DeviceFrames () {
               fontWeight="bold"
               italic={false}
             >
-              { type }
+              { backgroundEnabled }
             </Text>
         </AutoLayout>
         {/* Top Bar end */}

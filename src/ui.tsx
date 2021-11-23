@@ -4,6 +4,7 @@ import {
   render,
   Textbox,
   Text,
+  Divider,
   Inline,
   useInitialFocus,
   VerticalSpace,
@@ -68,6 +69,8 @@ function Plugin (props: { type: string, title: string }) {
     const newValue = event.currentTarget.value
     console.log(newValue)
 
+    
+
     if(newValue == 'Mobile') {
       setCurrentDevice('iPhone 8')
     }
@@ -112,6 +115,9 @@ function Plugin (props: { type: string, title: string }) {
   function handleMobileChange(event: h.JSX.TargetedEvent<HTMLInputElement>) {
     const newValue = event.currentTarget.value
     console.log(newValue)
+
+    
+
     setCurrentDevice(newValue)
   }
 
@@ -119,6 +125,12 @@ function Plugin (props: { type: string, title: string }) {
     function () {
       emit('UPDATE_TYPE', type)
       emit('UPDATE_TITLE', title)
+
+      emit('UPDATE_DEVICE', device)
+      emit('UPDATE_BACKGROUND_ENABLED', backgroundEnabled)
+      emit('UPDATE_DEVICEBORDER_ENABLED', deviceBorderEnabled)
+      emit('UPDATE_DEVICETYPE', deviceType)
+
     },
     [type, title]
   )
@@ -136,63 +148,72 @@ function Plugin (props: { type: string, title: string }) {
   }
 
   return (
-    <Container>
-      {/* <VerticalSpace space='large' />
-      <Textbox {...useInitialFocus()} onValueInput={setType} value={type} />
-      <VerticalSpace space='large' />
-      <Textbox onValueInput={setTitle} value={title} /> */}
-      <VerticalSpace space='large' />
-      <Text bold>Device Type</Text>
-      <VerticalSpace space='large' />
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <Dropdown
-          noBorder
-          icon={ getCurrentDeviceIcon(false)}
-          onChange={handleDeviceTypeChange}
-          options={deviceOptions}
-          value={deviceType}
-        />
-        <SegmentedControl onChange={handleBackgroundEnabledChange} options={backgroundOptions} value={backgroundEnabled} />
+    <div>
+      <Container>
+        <VerticalSpace space='medium' />
+        <Text bold>Device Type</Text>
+        <VerticalSpace space='large' />
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <Dropdown
+            noBorder
+            icon={ getCurrentDeviceIcon(false)}
+            onChange={handleDeviceTypeChange}
+            options={deviceOptions}
+            value={deviceType}
+          />
+          <SegmentedControl onChange={handleBackgroundEnabledChange} options={backgroundOptions} value={backgroundEnabled} />
 
-      </div>
-      <VerticalSpace space='small' />
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <Text>Enable Device Border</Text>
-        <SegmentedControl onChange={handleDeviceBorderEnabledChange} options={deviceBorderOptions} value={deviceBorderEnabled} />
-      </div>
-      <VerticalSpace space='small' />
+        </div>
+        <VerticalSpace space='small' />
+          
+        <div>
+          {
+            deviceType === 'Mobile' && <Dropdown
+              onChange={handleMobileChange}
+              options={mobileOptions}
+              value={device}
+            />
+          }
+
+          {
+            deviceType === 'Tablet' && <Dropdown
+              onChange={handleMobileChange}
+              options={tabletOptions}
+              value={device}
+            />
+          }
+          {
+            deviceType === 'Desktop' && <Dropdown
+              onChange={handleMobileChange}
+              options={desktopOptions}
+              value={device}
+            />
+          }
+        </div>
+        <VerticalSpace space='small' />
+      </Container>
+
+      <Divider/>
       
-      <div>
-        {
-          deviceType === 'Mobile' && <Dropdown
-            onChange={handleMobileChange}
-            options={mobileOptions}
-            value={device}
-          />
-        }
+      <Container>
+        <VerticalSpace space='small' />
 
-        {
-          deviceType === 'Tablet' && <Dropdown
-            onChange={handleMobileChange}
-            options={tabletOptions}
-            value={device}
-          />
-        }
-        {
-          deviceType === 'Desktop' && <Dropdown
-            onChange={handleMobileChange}
-            options={desktopOptions}
-            value={device}
-          />
-        }
-      </div>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <Text>Enable Device Border</Text>
+          <SegmentedControl onChange={handleDeviceBorderEnabledChange} options={deviceBorderOptions} value={deviceBorderEnabled} />
+        </div>
+        <VerticalSpace space='small' />
+      </Container>
 
-      <VerticalSpace space='large' />
-      {/* <Button fullWidth onClick={handleUpdateButtonClick}>
-        Update Text
-      </Button>
-      <VerticalSpace space='small' /> */}
-    </Container>
+      <Divider/>
+      <Container>
+      <VerticalSpace space='medium' />
+        <Button fullWidth onClick={handleUpdateButtonClick}>
+          Update Values
+        </Button>
+        <VerticalSpace space='small' />
+      </Container>
+    </div>
   )
 }
 

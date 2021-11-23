@@ -86,6 +86,8 @@
   function DeviceFrames() {
     const [type, setType] = useSyncedState("type", "Card Type");
     const [title, setTitle] = useSyncedState("title", "Title");
+    const [deviceType, setDeviceType] = useSyncedState("deviceType", "Mobile");
+    const [backgroundEnabled, setBackgroundEnabled] = useSyncedState("backgroundEnabled", "noBackground");
     const items = [
       {
         itemType: "action",
@@ -125,6 +127,14 @@
             setTitle(title2);
             resolve();
           });
+          once("UPDATE_DEVICETYPE", function(type2) {
+            setDeviceType(type2);
+            resolve();
+          });
+          once("UPDATE_BACKGROUND_ENABLED", function(value) {
+            setBackgroundEnabled(value);
+            resolve();
+          });
         }
       });
     }
@@ -154,7 +164,7 @@
       fill: "#fff",
       fontWeight: "bold",
       italic: false
-    }, type)), /* @__PURE__ */ figma.widget.h(AutoLayout, {
+    }, backgroundEnabled)), /* @__PURE__ */ figma.widget.h(AutoLayout, {
       horizontalAlignItems: "center",
       verticalAlignItems: "center",
       padding: 22,
