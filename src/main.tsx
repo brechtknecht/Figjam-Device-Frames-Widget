@@ -17,7 +17,7 @@ function DeviceFrames () {
   const [title, setTitle] = useSyncedState("title", "Title")
 
   const [scale, setScale] = useSyncedState("scale", 1)
-  const MAX_SCALE_UPPER = 2
+  const MAX_SCALE_UPPER = 3
   const MAX_SCALE_LOWER = 0.5
 
   const [deviceType, setDeviceType] = useSyncedState("deviceType", "Mobile")
@@ -65,8 +65,12 @@ function DeviceFrames () {
     },
   ]
 
-  function resolveBorderEnabled (border : string): boolean{
+  function resolveBorderEnabled (border : string): boolean {
     if(border == 'noBorder') { return false } else {return true}
+  }
+
+  function resolveBackgroundEnabled (fill: string): boolean {
+    if(fill == 'noBackground') { return false } else {return true}
   }
 
   async function onChange ({
@@ -104,15 +108,18 @@ function DeviceFrames () {
 
       /* Switches the device Types */
       if(propertyName == 'setMobile') {
-        setDeviceType('Mobile'); resolve();
+        setDeviceType('Mobile'); setCurrentDevice('iPhone 11');
+        resolve();
       }
 
       if(propertyName == 'setTablet') {
-        setDeviceType('Tablet'); resolve();
+        setDeviceType('Tablet'); setCurrentDevice('iPad Pro 11'); 
+        resolve();
       }
 
       if(propertyName == 'setDesktop') {
-        setDeviceType('Desktop'); resolve();
+        setDeviceType('Desktop'); setCurrentDevice('Laptop');
+        resolve();
       }
 
       /* Sets the Device Scaling properly*/ 
@@ -137,6 +144,9 @@ function DeviceFrames () {
   }
   usePropertyMenu(items, onChange)
   return (
-    <DeviceiPhone8 scale={scale} border={resolveBorderEnabled(deviceBorderEnabled)}/>
+    <DeviceiPhone8 
+      scale={scale} 
+      border={resolveBorderEnabled(deviceBorderEnabled)}
+      fill={resolveBackgroundEnabled(backgroundEnabled)}/>
   )
 }

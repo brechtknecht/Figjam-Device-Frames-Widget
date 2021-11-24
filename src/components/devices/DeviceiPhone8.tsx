@@ -1,9 +1,9 @@
 /** @jsx figma.widget.h */
 
-import { h } from 'preact'
-
 const { widget } = figma
-const { AutoLayout, SVG } = widget
+const { AutoLayout, SVG, Text } = widget
+
+import DeviceData from '/devices.json'
 
 const deviceWidth = 179
 const deviceHeight = 361
@@ -11,7 +11,7 @@ const deviceHeight = 361
 const borderlessWidth = 159
 const borderlessHeight = 281
 
-export default function DeviceiPhone8 (props: {scale : number, border: boolean}) {
+export default function DeviceiPhone8 (props: {scale : number, border: boolean, fill: boolean}) {
     return (
         <AutoLayout 
             width = {
@@ -19,9 +19,17 @@ export default function DeviceiPhone8 (props: {scale : number, border: boolean})
             } 
             height = {
                 (props.border ? deviceHeight : borderlessHeight) * props.scale
-            } stroke="#eaeaea" strokeWidth={0}
+            } 
+            stroke="#eaeaea" 
+            strokeWidth={0}
         >
-            <SVG src={props.border ? SVGiPhone8 : SVGiPhone8Borderless} width="fill-parent" height="fill-parent" fill="#FFF"/>
+            <Text>{DeviceData.devices["iPhone8"].deviceWidth}</Text>
+            <SVG 
+                src={props.border ? SVGiPhone8 : SVGiPhone8Borderless} 
+                width="fill-parent" 
+                height="fill-parent" 
+                fill={props.fill ? "#FFF" : {r: 1, g: 1, b: 1, a: 0}}
+            />
         </AutoLayout>
     )
 }

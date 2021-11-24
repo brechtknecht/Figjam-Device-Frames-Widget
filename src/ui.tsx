@@ -71,7 +71,7 @@ function Plugin (props: { type: string, title: string, deviceType: string, devic
 
     
     if(newValue == 'Mobile') {
-      setCurrentDevice('iPhone 8')
+      setCurrentDevice('iPhone 11')
     }
 
     if(newValue == 'Tablet') {
