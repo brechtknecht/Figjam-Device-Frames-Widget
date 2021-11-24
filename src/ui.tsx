@@ -103,7 +103,7 @@ function Plugin (props: { type: string, title: string, deviceType: string, devic
 
   const tabletOptions: Array<DropdownOption> = [
     { value: 'iPad Pro 11' },
-    { value: 'iPad 9.7"' },
+    { value: 'iPad 9.7″' },
   ]
 
   const desktopOptions: Array<DropdownOption> = [
