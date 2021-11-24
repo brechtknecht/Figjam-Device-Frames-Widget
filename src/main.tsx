@@ -5,6 +5,8 @@ import { once, showUI } from '@create-figma-plugin/utilities'
 const { widget } = figma
 const { AutoLayout, Text, useSyncedState, usePropertyMenu } = widget
 
+import DeviceiPhone8 from './components/devices/DeviceiPhone8'
+
 export default function () {
   widget.register(DeviceFrames)
 }
@@ -14,11 +16,15 @@ function DeviceFrames () {
 
   const [title, setTitle] = useSyncedState("title", "Title")
 
+  const [scale, setScale] = useSyncedState("scale", 1)
+  const MAX_SCALE_UPPER = 2
+  const MAX_SCALE_LOWER = 0.5
+
   const [deviceType, setDeviceType] = useSyncedState("deviceType", "Mobile")
 
   const [backgroundEnabled, setBackgroundEnabled] = useSyncedState("backgroundEnabled", "background")
 
-  const [deviceBorderEnabled, setDeviceBorderEnabled] = useSyncedState("deviceBorderEnabled","noBorder")
+  const [deviceBorderEnabled, setDeviceBorderEnabled] = useSyncedState("deviceBorderEnabled","Border")
 
   const [device, setCurrentDevice] = useSyncedState("device", "iPhone 8")
 
@@ -45,8 +51,24 @@ function DeviceFrames () {
       tooltip: "Properties",
       propertyName: "edit",
       itemType: "action"
-    }
+    },{
+      itemType: 'action',
+      propertyName: 'scaleUp',
+      tooltip: 'Make it Bigger ↑',
+      icon: '<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 15.5V10.5H16.5V15.5H21.5V16.5H16.5V21.5H15.5V16.5H10.5V15.5H15.5Z" fill="white" fill-opacity="0.8"/></svg>'
+    },
+    {
+      itemType: 'action',
+      propertyName: 'scaleDown',
+      tooltip: 'Make it Smaller ↓',
+      icon: '<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M21.5 16.5H10.5V15.5H21.5V16.5Z" fill="white" fill-opacity="0.8"/></svg>'
+    },
   ]
+
+  function resolveBorderEnabled (border : string): boolean{
+    if(border == 'noBorder') { return false } else {return true}
+  }
+
   async function onChange ({
     propertyName
   }: WidgetPropertyEvent): Promise<void> {
@@ -79,49 +101,42 @@ function DeviceFrames () {
           setCurrentDevice(value); resolve();
         })
       }
+
+      /* Switches the device Types */
+      if(propertyName == 'setMobile') {
+        setDeviceType('Mobile'); resolve();
+      }
+
+      if(propertyName == 'setTablet') {
+        setDeviceType('Tablet'); resolve();
+      }
+
+      if(propertyName == 'setDesktop') {
+        setDeviceType('Desktop'); resolve();
+      }
+
+      /* Sets the Device Scaling properly*/ 
+      if (propertyName == 'scaleUp') {
+        let s = scale + 0.2
+        if(s < MAX_SCALE_UPPER) {
+          setScale(s)
+        }
+        console.log("CURRENTSCALE: ", scale)
+        resolve();
+      }
+
+      if(propertyName == 'scaleDown') {
+        let s = scale - 0.2
+        if(s > MAX_SCALE_LOWER) {
+          setScale(s)
+        }
+        resolve();
+      }
+      
     })
   }
   usePropertyMenu(items, onChange)
   return (
-    // multiple props
-    <AutoLayout width={400} height="hug-contents" cornerRadius={12} fill="#F4F4F4" stroke="#eaeaea" strokeWidth={0.5}>
-      <AutoLayout width={400} direction="vertical" height="hug-contents">
-
-        {/* Top Bar start */}
-        <AutoLayout 
-          horizontalAlignItems="center" 
-          verticalAlignItems="center" 
-          fill="#E76557" 
-          width="fill-parent" 
-          height={48}>
-            <Text 
-              fontFamily={"Inter"} 
-              fontSize={22}
-              textCase="upper"
-              letterSpacing={3}
-              fill="#fff"
-              fontWeight="bold"
-              italic={false}
-            >
-              { device }
-            </Text>
-        </AutoLayout>
-        {/* Top Bar end */}
-
-        {/* Card Title start */}
-        <AutoLayout horizontalAlignItems="center" verticalAlignItems="center" padding={22} spacing={24} height="hug-contents" width="fill-parent" direction="vertical">
-          <Text
-            fontSize={24}
-            height="hug-contents"
-            width="fill-parent"
-            horizontalAlignText="left"
-          >
-            { deviceBorderEnabled }
-          </Text>
-        </AutoLayout>
-        {/* Card Title end */}
-
-      </AutoLayout> 
-    </AutoLayout>
+    <DeviceiPhone8 scale={scale} border={resolveBorderEnabled(deviceBorderEnabled)}/>
   )
 }
