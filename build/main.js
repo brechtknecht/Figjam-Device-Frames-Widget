@@ -263,7 +263,7 @@
     const [deviceType, setDeviceType] = useSyncedState("deviceType", "Mobile");
     const [backgroundEnabled, setBackgroundEnabled] = useSyncedState("backgroundEnabled", "background");
     const [deviceBorderEnabled, setDeviceBorderEnabled] = useSyncedState("deviceBorderEnabled", "Border");
-    const [device, setCurrentDevice] = useSyncedState("device", "iPhone 8");
+    const [device, setCurrentDevice] = useSyncedState("device", "iPhone 11");
     const items = [
       {
         itemType: "action",

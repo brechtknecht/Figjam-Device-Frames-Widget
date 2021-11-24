@@ -26,7 +26,7 @@ function DeviceFrames () {
 
   const [deviceBorderEnabled, setDeviceBorderEnabled] = useSyncedState("deviceBorderEnabled","Border")
 
-  const [device, setCurrentDevice] = useSyncedState("device", "iPhone 8")
+  const [device, setCurrentDevice] = useSyncedState("device", "iPhone 11")
 
   const items: Array<WidgetPropertyMenuItem> = [
     {
