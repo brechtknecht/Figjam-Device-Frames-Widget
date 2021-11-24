@@ -96,8 +96,8 @@
   // src/components/devices/DeviceRenderer.tsx
   function DeviceRenderer(props) {
     return /* @__PURE__ */ figma.widget.h(AutoLayout, {
-      width: (props.border ? deviceWidth : borderlessWidth) * props.scale,
-      height: (props.border ? deviceHeight : borderlessHeight) * props.scale,
+      width: resolveDeviceDimensions(props.device, props.border).width * props.scale,
+      height: resolveDeviceDimensions(props.device, props.border).height * props.scale,
       stroke: "#eaeaea",
       strokeWidth: 0
     }, /* @__PURE__ */ figma.widget.h(SVG, {
@@ -115,16 +115,26 @@
       return found.borderlessSVG;
     }
   }
-  var widget, AutoLayout, SVG, Text, deviceWidth, deviceHeight, borderlessWidth, borderlessHeight;
+  function resolveDeviceDimensions(device, border) {
+    const found = devices_default.find((element) => element.name == device);
+    if (border) {
+      return {
+        width: found.deviceWidth,
+        height: found.deviceHeight
+      };
+    } else {
+      return {
+        width: found.borderlessWidth,
+        height: found.borderlessHeight
+      };
+    }
+  }
+  var widget, AutoLayout, SVG, Text;
   var init_DeviceRenderer = __esm({
     "src/components/devices/DeviceRenderer.tsx"() {
       init_devices();
       ({ widget } = figma);
       ({ AutoLayout, SVG, Text } = widget);
-      deviceWidth = 179;
-      deviceHeight = 361;
-      borderlessWidth = 159;
-      borderlessHeight = 281;
     }
   });
 

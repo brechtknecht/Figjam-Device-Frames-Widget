@@ -15,10 +15,10 @@ export default function DeviceRenderer (props: {scale : number, border: boolean,
     return (
         <AutoLayout 
             width = {
-                (props.border ? deviceWidth : borderlessWidth) * props.scale
+                resolveDeviceDimensions(props.device, props.border).width * props.scale
             } 
             height = {
-                (props.border ? deviceHeight : borderlessHeight) * props.scale
+                resolveDeviceDimensions(props.device, props.border).height * props.scale
             } 
             stroke="#eaeaea" 
             strokeWidth={0}
@@ -40,6 +40,24 @@ function resolveDevice(device: string, border: boolean) {
     } else {
         return found!.borderlessSVG
     }
+}
+
+function resolveDeviceDimensions(device: string, border: boolean) {
+    const found = DeviceData.find(element => element.name == device);
+
+    if(border) {
+        return {
+            width: found!.deviceWidth,
+            height: found!.deviceHeight
+        }
+    } else {
+        return {
+            width: found!.borderlessWidth,
+            height: found!.borderlessHeight
+        }
+    }
+    
+
 }
 
 function deviceName (device: string): string{
