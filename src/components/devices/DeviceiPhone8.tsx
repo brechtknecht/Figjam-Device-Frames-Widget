@@ -3,7 +3,7 @@
 const { widget } = figma
 const { AutoLayout, SVG, Text } = widget
 
-import DeviceData from '/devices.json'
+import DeviceData from './devices.json'
 
 const deviceWidth = 179
 const deviceHeight = 361
