@@ -5,7 +5,7 @@ import { once, showUI } from '@create-figma-plugin/utilities'
 const { widget } = figma
 const { AutoLayout, Text, useSyncedState, usePropertyMenu } = widget
 
-import DeviceiPhone8 from './components/devices/DeviceiPhone8'
+import DeviceRenderer from './components/devices/DeviceRenderer'
 
 export default function () {
   widget.register(DeviceFrames)
@@ -144,9 +144,12 @@ function DeviceFrames () {
   }
   usePropertyMenu(items, onChange)
   return (
-    <DeviceiPhone8 
+    <DeviceRenderer
       scale={scale} 
       border={resolveBorderEnabled(deviceBorderEnabled)}
-      fill={resolveBackgroundEnabled(backgroundEnabled)}/>
+      fill={resolveBackgroundEnabled(backgroundEnabled)}
+      deviceType={deviceType}
+      device={device}
+      />
   )
 }

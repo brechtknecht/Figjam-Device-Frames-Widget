@@ -95,8 +95,8 @@
     }
   });
 
-  // src/components/devices/DeviceiPhone8.tsx
-  function DeviceiPhone8(props) {
+  // src/components/devices/DeviceRenderer.tsx
+  function DeviceRenderer(props) {
     return /* @__PURE__ */ figma.widget.h(AutoLayout, {
       width: (props.border ? deviceWidth : borderlessWidth) * props.scale,
       height: (props.border ? deviceHeight : borderlessHeight) * props.scale,
@@ -110,8 +110,8 @@
     }));
   }
   var widget, AutoLayout, SVG, Text, deviceWidth, deviceHeight, borderlessWidth, borderlessHeight, SVGiPhone8, SVGiPhone8Borderless;
-  var init_DeviceiPhone8 = __esm({
-    "src/components/devices/DeviceiPhone8.tsx"() {
+  var init_DeviceRenderer = __esm({
+    "src/components/devices/DeviceRenderer.tsx"() {
       init_devices();
       ({ widget } = figma);
       ({ AutoLayout, SVG, Text } = widget);
@@ -269,17 +269,19 @@
       });
     }
     usePropertyMenu(items, onChange);
-    return /* @__PURE__ */ figma.widget.h(DeviceiPhone8, {
+    return /* @__PURE__ */ figma.widget.h(DeviceRenderer, {
       scale,
       border: resolveBorderEnabled(deviceBorderEnabled),
-      fill: resolveBackgroundEnabled(backgroundEnabled)
+      fill: resolveBackgroundEnabled(backgroundEnabled),
+      deviceType,
+      device
     });
   }
   var widget2, AutoLayout2, Text2, useSyncedState, usePropertyMenu;
   var init_main = __esm({
     "src/main.tsx"() {
       init_lib();
-      init_DeviceiPhone8();
+      init_DeviceRenderer();
       ({ widget: widget2 } = figma);
       ({ AutoLayout: AutoLayout2, Text: Text2, useSyncedState, usePropertyMenu } = widget2);
     }

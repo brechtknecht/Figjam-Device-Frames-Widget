@@ -11,7 +11,7 @@ const deviceHeight = 361
 const borderlessWidth = 159
 const borderlessHeight = 281
 
-export default function DeviceiPhone8 (props: {scale : number, border: boolean, fill: boolean}) {
+export default function DeviceRenderer (props: {scale : number, border: boolean, fill: boolean, deviceType: string, device: string}) {
     return (
         <AutoLayout 
             width = {
