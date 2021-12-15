@@ -24,7 +24,7 @@ function DeviceFrames () {
 
   const [backgroundEnabled, setBackgroundEnabled] = useSyncedState("backgroundEnabled", "background")
 
-  const [deviceBorderEnabled, setDeviceBorderEnabled] = useSyncedState("deviceBorderEnabled","Border")
+  const [deviceBorderEnabled, setDeviceBorderEnabled] = useSyncedState("deviceBorderEnabled","border")
 
   const [device, setCurrentDevice] = useSyncedState("device", "iPhone 11")
 

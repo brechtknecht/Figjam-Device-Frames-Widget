@@ -5,7 +5,7 @@
     "figjam"
   ],
   "containsWidget": true,
-  "id": "1045386129853518633",
+  "id": "figjam-device-frames",
   "name": "Device Frames",
   "main": "build/main.js",
   "ui": "build/ui.js"

@@ -127,7 +127,7 @@ function Plugin (props: { type: string, title: string, deviceType: string, devic
       emit('UPDATE_BACKGROUND_ENABLED', backgroundEnabled)
       emit('UPDATE_DEVICEBORDER_ENABLED', deviceBorderEnabled)
     },
-    /* !!!! UPDATE THIS DO NOT FORGET !!!!!*/ 
+    /* !!!! UPDATE THIS — DO NOT FORGET !!!!!*/ 
     [type, title, deviceType, device, backgroundEnabled, deviceBorderEnabled]
   )
 
