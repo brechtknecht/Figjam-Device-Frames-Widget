@@ -280,6 +280,7 @@
     let lockedIcon = '<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.1429 14.8571H17.8571V13.1428C17.8571 12.1171 17.0257 11.2856 16 11.2856C14.9743 11.2856 14.1429 12.1171 14.1429 13.1428V14.8571ZM13.1429 14.8571H12.5C12.2239 14.8571 12 15.0809 12 15.3571V21.2142C12 21.4904 12.2239 21.7142 12.5 21.7142H19.5C19.7761 21.7142 20 21.4904 20 21.2142V15.3571C20 15.0809 19.7761 14.8571 19.5 14.8571H18.8571V13.1428C18.8571 11.5648 17.578 10.2856 16 10.2856C14.422 10.2856 13.1429 11.5648 13.1429 13.1428V14.8571Z" fill="white"/></svg>';
     let unlockedIcon = '<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M20.3909 12.5977V14.1564H21.3909V16.2345H21.3909V15.2345V12.5977C21.3909 11.163 20.2279 10 18.7932 10C17.3585 10 16.1955 11.163 16.1955 12.5977V15.1955H11.5C11.2239 15.1955 11 15.4193 11 15.6955V20.93C11 21.2061 11.2239 21.43 11.5 21.43H17.7736C18.0498 21.43 18.2736 21.2061 18.2736 20.93V15.6955C18.2736 15.4193 18.0498 15.1955 17.7736 15.1955H17.1955V12.5977C17.1955 11.7153 17.9108 11 18.7932 11C19.6756 11 20.3909 11.7153 20.3909 12.5977Z" fill="white"/></svg>';
     const [isLockedIcon, setLockedIcon] = useSyncedState("lockedIcon", unlockedIcon);
+    const [votes, setVotes] = useSyncedState("votes", {});
     const items = [
       {
         itemType: "action",
@@ -417,6 +418,18 @@
           clone.x += widgetNode.width + 32;
           resolve();
         }
+        if (propertyName == "stickDrawings") {
+          const widgetNode = figma.getNodeById(widgetId);
+          let elements = figma.currentPage.children.forEach((node) => {
+            console.log(node.type);
+            if (node.type == "HIGHLIGHT") {
+              console.log(node.stuckTo.stuckTo);
+            }
+            if (node.type == "STAMP" || node.type == "VECTOR" || node.type == "TEXT" || node.type == "SHAPE_WITH_TEXT") {
+            }
+          });
+          resolve();
+        }
       });
     }
     usePropertyMenu(items, onChange);
@@ -429,13 +442,13 @@
       locked: isLocked
     });
   }
-  var widget2, AutoLayout2, Text2, useSyncedState, usePropertyMenu, useWidgetId;
+  var widget2, AutoLayout2, Text2, StampNode, useSyncedState, usePropertyMenu, useWidgetId, useStickableHost;
   var init_main = __esm({
     "src/main.tsx"() {
       init_lib();
       init_DeviceRenderer();
       ({ widget: widget2 } = figma);
-      ({ AutoLayout: AutoLayout2, Text: Text2, useSyncedState, usePropertyMenu, useWidgetId } = widget2);
+      ({ AutoLayout: AutoLayout2, Text: Text2, StampNode, useSyncedState, usePropertyMenu, useWidgetId, useStickableHost } = widget2);
     }
   });
 
