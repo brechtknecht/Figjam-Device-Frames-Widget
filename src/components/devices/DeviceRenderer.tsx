@@ -5,7 +5,7 @@ const { AutoLayout, SVG, Text } = widget
 
 import DeviceData from './devices.json'
 
-export default function DeviceRenderer (props: {scale : number, border: boolean, fill: boolean, deviceType: string, device: string}) {    
+export default function DeviceRenderer (props: {scale : number, border: boolean, fill: boolean, deviceType: string, device: string, locked: boolean}) {    
     return (
         <AutoLayout 
             width = {
@@ -14,8 +14,10 @@ export default function DeviceRenderer (props: {scale : number, border: boolean,
             height = {
                 resolveDeviceDimensions(props.device, props.border).height * props.scale
             } 
+            
             stroke="#eaeaea" 
             strokeWidth={0}
+            locked={props.isLocked}
         >
             <SVG 
                 src={resolveDevice(props.device, props.border)} 

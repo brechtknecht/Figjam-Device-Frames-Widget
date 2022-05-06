@@ -1,14 +1,24 @@
 (() => {
   var __defProp = Object.defineProperty;
-  var __markAsModule = (target) => __defProp(target, "__esModule", { value: true });
+  var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
+  var __getOwnPropNames = Object.getOwnPropertyNames;
+  var __hasOwnProp = Object.prototype.hasOwnProperty;
   var __esm = (fn, res) => function __init() {
-    return fn && (res = (0, fn[Object.keys(fn)[0]])(fn = 0)), res;
+    return fn && (res = (0, fn[__getOwnPropNames(fn)[0]])(fn = 0)), res;
   };
   var __export = (target, all) => {
-    __markAsModule(target);
     for (var name in all)
       __defProp(target, name, { get: all[name], enumerable: true });
   };
+  var __copyProps = (to, from, except, desc) => {
+    if (from && typeof from === "object" || typeof from === "function") {
+      for (let key of __getOwnPropNames(from))
+        if (!__hasOwnProp.call(to, key) && key !== except)
+          __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
+    }
+    return to;
+  };
+  var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 
   // node_modules/@create-figma-plugin/utilities/lib/events.js
   function on(name, handler) {
@@ -207,7 +217,8 @@
       width: resolveDeviceDimensions(props.device, props.border).width * props.scale,
       height: resolveDeviceDimensions(props.device, props.border).height * props.scale,
       stroke: "#eaeaea",
-      strokeWidth: 0
+      strokeWidth: 0,
+      locked: props.isLocked
     }, /* @__PURE__ */ figma.widget.h(SVG, {
       src: resolveDevice(props.device, props.border),
       width: "fill-parent",
@@ -255,6 +266,7 @@
     widget2.register(DeviceFrames);
   }
   function DeviceFrames() {
+    const widgetId = useWidgetId();
     const [type, setType] = useSyncedState("type", "Card Type");
     const [title, setTitle] = useSyncedState("title", "Title");
     const [scale, setScale] = useSyncedState("scale", 1);
@@ -264,6 +276,10 @@
     const [backgroundEnabled, setBackgroundEnabled] = useSyncedState("backgroundEnabled", "background");
     const [deviceBorderEnabled, setDeviceBorderEnabled] = useSyncedState("deviceBorderEnabled", "border");
     const [device, setCurrentDevice] = useSyncedState("device", "iPhone 11");
+    const [isLocked, setLockedState] = useSyncedState("isLocked", false);
+    let lockedIcon = '<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.1429 14.8571H17.8571V13.1428C17.8571 12.1171 17.0257 11.2856 16 11.2856C14.9743 11.2856 14.1429 12.1171 14.1429 13.1428V14.8571ZM13.1429 14.8571H12.5C12.2239 14.8571 12 15.0809 12 15.3571V21.2142C12 21.4904 12.2239 21.7142 12.5 21.7142H19.5C19.7761 21.7142 20 21.4904 20 21.2142V15.3571C20 15.0809 19.7761 14.8571 19.5 14.8571H18.8571V13.1428C18.8571 11.5648 17.578 10.2856 16 10.2856C14.422 10.2856 13.1429 11.5648 13.1429 13.1428V14.8571Z" fill="white"/></svg>';
+    let unlockedIcon = '<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M20.3909 12.5977V14.1564H21.3909V16.2345H21.3909V15.2345V12.5977C21.3909 11.163 20.2279 10 18.7932 10C17.3585 10 16.1955 11.163 16.1955 12.5977V15.1955H11.5C11.2239 15.1955 11 15.4193 11 15.6955V20.93C11 21.2061 11.2239 21.43 11.5 21.43H17.7736C18.0498 21.43 18.2736 21.2061 18.2736 20.93V15.6955C18.2736 15.4193 18.0498 15.1955 17.7736 15.1955H17.1955V12.5977C17.1955 11.7153 17.9108 11 18.7932 11C19.6756 11 20.3909 11.7153 20.3909 12.5977Z" fill="white"/></svg>';
+    const [isLockedIcon, setLockedIcon] = useSyncedState("lockedIcon", unlockedIcon);
     const items = [
       {
         itemType: "action",
@@ -284,11 +300,6 @@
         icon: '<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3.59628" y="7.87225" width="24.4037" height="15.2555" rx="1" stroke="#F6F6F6" stroke-width="1.25"/><path d="M17.5493 19.241L16.2502 15.8491L16.0806 16.1806L17.8776 16.2938C17.957 16.2992 18.0208 16.2763 18.0689 16.2251C18.117 16.1739 18.1423 16.1105 18.1447 16.0351C18.1471 15.9596 18.1194 15.8882 18.0617 15.8208L14.4893 11.7295C14.4363 11.6676 14.3774 11.6366 14.3124 11.6366C14.2499 11.6339 14.1958 11.6568 14.1501 11.7053C14.1067 11.7538 14.0839 11.8198 14.0815 11.9034L14.0238 17.5956C14.0213 17.6899 14.0454 17.7627 14.0959 17.8139C14.1464 17.8651 14.2066 17.8907 14.2763 17.8907C14.3461 17.888 14.4075 17.8516 14.4604 17.7816L15.6187 16.3423L15.2831 16.2453L16.5389 19.714C16.5629 19.7814 16.6026 19.8285 16.658 19.8555C16.7133 19.8851 16.7686 19.8865 16.8239 19.8595L17.4482 19.5725C17.506 19.5482 17.5432 19.5038 17.5601 19.4391C17.5793 19.3744 17.5757 19.3084 17.5493 19.241Z" fill="#F6F6F6"/></svg>'
       },
       {
-        tooltip: "Properties",
-        propertyName: "edit",
-        itemType: "action"
-      },
-      {
         itemType: "action",
         propertyName: "scaleUp",
         tooltip: "Make it Bigger\u2009\u2191",
@@ -299,6 +310,16 @@
         propertyName: "scaleDown",
         tooltip: "Make it Smaller\u2009\u2193",
         icon: '<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M21.5 16.5H10.5V15.5H21.5V16.5Z" fill="white" fill-opacity="0.8"/></svg>'
+      },
+      {
+        tooltip: "Properties",
+        propertyName: "edit",
+        itemType: "action"
+      },
+      {
+        itemType: "action",
+        propertyName: "addInstance",
+        tooltip: "Add Frame +"
       }
     ];
     function resolveBorderEnabled(border) {
@@ -377,6 +398,25 @@
           }
           resolve();
         }
+        if (propertyName == "lock") {
+          if (isLocked) {
+            setLockedState(false);
+            setLockedIcon(unlockedIcon);
+          } else {
+            setLockedState(true);
+            setLockedIcon(lockedIcon);
+          }
+          console.log("IsLocked: ", isLocked);
+          resolve();
+        }
+        if (propertyName == "addInstance") {
+          const widgetNode = figma.getNodeById(widgetId);
+          const clone = widgetNode.cloneWidget({
+            syncedStateOverrides: ["type", "title", "scale", "deviceType", "backgroundEnabled", "deviceBorderEnabled", "device", "isLocked"]
+          });
+          clone.x += widgetNode.width + 32;
+          resolve();
+        }
       });
     }
     usePropertyMenu(items, onChange);
@@ -385,21 +425,22 @@
       border: resolveBorderEnabled(deviceBorderEnabled),
       fill: resolveBackgroundEnabled(backgroundEnabled),
       deviceType,
-      device
+      device,
+      locked: isLocked
     });
   }
-  var widget2, AutoLayout2, Text2, useSyncedState, usePropertyMenu;
+  var widget2, AutoLayout2, Text2, useSyncedState, usePropertyMenu, useWidgetId;
   var init_main = __esm({
     "src/main.tsx"() {
       init_lib();
       init_DeviceRenderer();
       ({ widget: widget2 } = figma);
-      ({ AutoLayout: AutoLayout2, Text: Text2, useSyncedState, usePropertyMenu } = widget2);
+      ({ AutoLayout: AutoLayout2, Text: Text2, useSyncedState, usePropertyMenu, useWidgetId } = widget2);
     }
   });
 
   // <stdin>
-  var modules = { "src/main.tsx--default": (init_main(), main_exports)["default"] };
+  var modules = { "src/main.tsx--default": (init_main(), __toCommonJS(main_exports))["default"] };
   var commandId = true ? "src/main.tsx--default" : figma.command;
   modules[commandId]();
 })();
