@@ -262,7 +262,7 @@
     const MAX_SCALE_LOWER = 0.5;
     const [deviceType, setDeviceType] = useSyncedState("deviceType", "Mobile");
     const [backgroundEnabled, setBackgroundEnabled] = useSyncedState("backgroundEnabled", "background");
-    const [deviceBorderEnabled, setDeviceBorderEnabled] = useSyncedState("deviceBorderEnabled", "Border");
+    const [deviceBorderEnabled, setDeviceBorderEnabled] = useSyncedState("deviceBorderEnabled", "border");
     const [device, setCurrentDevice] = useSyncedState("device", "iPhone 11");
     const items = [
       {
