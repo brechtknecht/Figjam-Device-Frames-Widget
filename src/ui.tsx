@@ -24,10 +24,12 @@ import DeviceMobile32 from './components/icons/DeviceMobile32'
 import DeviceTablet32 from './components/icons/DeviceTablet32'
 import DeviceDesktop32 from './components/icons/DeviceDesktop32'
 
+import DevicePreview from './components/devices/DevicePreview'
+
 import None16 from './components/icons/None16'
 import Check16 from './components/icons/Check16'
 
-function Plugin (props: { type: string, title: string, deviceType: string, device: string, backgroundEnabled: string, deviceBorderEnabled: string }) {
+function Plugin (props: { type: string, title: string, deviceType: string, device: string, backgroundEnabled: string, deviceBorderEnabled: string, scale: number, isLocked: string }) {
   const [type, setType]     = useState(props.type)
   const [title, setTitle]   = useState(props.title)
 
@@ -36,6 +38,9 @@ function Plugin (props: { type: string, title: string, deviceType: string, devic
 
   const [backgroundEnabled, setBackgroundEnabled] = useState(props.backgroundEnabled)
   const [deviceBorderEnabled, setDeviceBorderEnabled] = useState(props.deviceBorderEnabled)
+
+  const [scale, setScale] = useState(props.scale)
+  const [isLocked, setLockedState] = useState("isLocked")
 
   const deviceOptions: Array<DropdownOption> = [
     { value: 'Mobile' },
@@ -128,7 +133,7 @@ function Plugin (props: { type: string, title: string, deviceType: string, devic
       emit('UPDATE_DEVICEBORDER_ENABLED', deviceBorderEnabled)
     },
     /* !!!! UPDATE THIS — DO NOT FORGET !!!!!*/ 
-    [type, title, deviceType, device, backgroundEnabled, deviceBorderEnabled]
+    [type, title, deviceType, device, backgroundEnabled, deviceBorderEnabled, scale]
   )
 
   function getCurrentDeviceIcon(background: Boolean){
@@ -143,9 +148,25 @@ function Plugin (props: { type: string, title: string, deviceType: string, devic
     }
   }
 
+  function resolveBorderEnabled (border : string): boolean {
+    if(border == 'noBorder') { return false } else {return true}
+  }
+
+  function resolveBackgroundEnabled (fill: string): boolean {
+    if(fill == 'noBackground') { return false } else {return true}
+  }
+
   return (
     <div>
       <Container>
+        <DevicePreview
+          scale={scale} 
+          border={resolveBorderEnabled(deviceBorderEnabled)}
+          fill={resolveBackgroundEnabled(backgroundEnabled)}
+          deviceType={deviceType}
+          device={device}
+          locked={false}
+        />
         <VerticalSpace space='medium' />
         <Text bold>Device Type</Text>
         <VerticalSpace space='large' />

@@ -376,7 +376,7 @@
     }) {
       await new Promise(function(resolve) {
         if (propertyName === "edit") {
-          showUI({ width: 240, height: 300 }, { type, title, deviceType, device, backgroundEnabled, deviceBorderEnabled });
+          showUI({ width: 240, height: 300 }, { type, title, deviceType, device, backgroundEnabled, deviceBorderEnabled, scale, isLocked });
           once("UPDATE_TYPE", function(type2) {
             setType(type2);
             resolve();
