@@ -13,10 +13,10 @@ export default function DeviceRenderer (props: {scale : number, border: boolean,
             } 
             height = {
                 resolveDeviceDimensions(props.device, props.border).height * props.scale
-            } 
-            
+            }
             stroke="#eaeaea" 
             strokeWidth={0}
+            cornerRadius={resolveCornerRadius(props.device)}
         >
             <SVG 
                 src={resolveDevice(props.device, props.border)} 
@@ -51,8 +51,11 @@ function resolveDeviceDimensions(device: string, border: boolean) {
             height: found!.borderlessHeight
         }
     }
-    
+}
 
+function resolveCornerRadius(device: string) {
+    const found = DeviceData.find(element => element.name == device);
+    return found!.cornerRadius
 }
 
 function deviceName (device: string): string{
