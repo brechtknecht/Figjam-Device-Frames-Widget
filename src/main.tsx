@@ -3,7 +3,7 @@
 import { once, showUI } from '@create-figma-plugin/utilities'
 
 const { widget } = figma
-const { AutoLayout, Text, StampNode, useSyncedState, usePropertyMenu, useWidgetId, useStickableHost } = widget
+const { AutoLayout, Text, useSyncedState, usePropertyMenu, useWidgetId, useStickableHost } = widget
 
 import DeviceRenderer from './components/devices/DeviceRenderer'
 
@@ -191,7 +191,23 @@ function DeviceFrames () {
           syncedStateOverrides: ["type", "title", "scale", "deviceType", "backgroundEnabled", "deviceBorderEnabled", "device", "isLocked"]
         })
 
-        clone.x += widgetNode.width + 32
+        const allWidgetNodes: WidgetNode[] = figma.currentPage.findAll(node => {
+          return node.type === "WIDGET"
+        })
+
+        const deviceFrameNodes: WidgetNode[] = allWidgetNodes.filter(node => {
+          return node.widgetId === figma.widgetId
+        })
+
+        let currentPos = clone.x + clone.width + 32
+        let multiplier = 1
+
+        calculateNewPosition(deviceFrameNodes, multiplier, currentPos)
+        let spawnPosition = tempPosition
+
+        console.log(spawnPosition)
+
+        clone.x = spawnPosition
 
         resolve();
       }
@@ -204,7 +220,7 @@ function DeviceFrames () {
           console.log(node.type)
 
           if(node.type == 'HIGHLIGHT') {
-            console.log(node.stuckTo.stuckTo)
+            // console.log(node.stuckTo.stuckTo)
           }
 
           if(node.type == 'STAMP' || node.type == 'VECTOR' || node.type == 'TEXT' || node.type == 'SHAPE_WITH_TEXT') {
@@ -217,6 +233,25 @@ function DeviceFrames () {
         resolve()
       }
     })
+  }
+
+  var tempPosition : any;
+  function calculateNewPosition(deviceFrameNodes : WidgetNode[], multiplier : any, currentPos : any) {
+    let newPosition : any
+    deviceFrameNodes.forEach((node: { x: Number, width: any }) => {
+      if(node.x == currentPos) { 
+        multiplier++
+        newPosition = currentPos + (node.width + 32) 
+      }
+    })
+
+    if(multiplier == 1) {
+      tempPosition = currentPos 
+      return
+    }
+    else {
+      calculateNewPosition(deviceFrameNodes, 1, newPosition)
+    }
   }
   
 

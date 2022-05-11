@@ -17,7 +17,6 @@ export default function DeviceRenderer (props: {scale : number, border: boolean,
             
             stroke="#eaeaea" 
             strokeWidth={0}
-            locked={props.isLocked}
         >
             <SVG 
                 src={resolveDevice(props.device, props.border)} 

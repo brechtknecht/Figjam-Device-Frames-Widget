@@ -217,8 +217,7 @@
       width: resolveDeviceDimensions(props.device, props.border).width * props.scale,
       height: resolveDeviceDimensions(props.device, props.border).height * props.scale,
       stroke: "#eaeaea",
-      strokeWidth: 0,
-      locked: props.isLocked
+      strokeWidth: 0
     }, /* @__PURE__ */ figma.widget.h(SVG, {
       src: resolveDevice(props.device, props.border),
       width: "fill-parent",
@@ -415,7 +414,18 @@
           const clone = widgetNode.cloneWidget({
             syncedStateOverrides: ["type", "title", "scale", "deviceType", "backgroundEnabled", "deviceBorderEnabled", "device", "isLocked"]
           });
-          clone.x += widgetNode.width + 32;
+          const allWidgetNodes = figma.currentPage.findAll((node) => {
+            return node.type === "WIDGET";
+          });
+          const deviceFrameNodes = allWidgetNodes.filter((node) => {
+            return node.widgetId === figma.widgetId;
+          });
+          let currentPos = clone.x + clone.width + 32;
+          let multiplier = 1;
+          calculateNewPosition(deviceFrameNodes, multiplier, currentPos);
+          let spawnPosition = tempPosition;
+          console.log(spawnPosition);
+          clone.x = spawnPosition;
           resolve();
         }
         if (propertyName == "stickDrawings") {
@@ -423,7 +433,6 @@
           let elements = figma.currentPage.children.forEach((node) => {
             console.log(node.type);
             if (node.type == "HIGHLIGHT") {
-              console.log(node.stuckTo.stuckTo);
             }
             if (node.type == "STAMP" || node.type == "VECTOR" || node.type == "TEXT" || node.type == "SHAPE_WITH_TEXT") {
             }
@@ -431,6 +440,22 @@
           resolve();
         }
       });
+    }
+    var tempPosition;
+    function calculateNewPosition(deviceFrameNodes, multiplier, currentPos) {
+      let newPosition;
+      deviceFrameNodes.forEach((node) => {
+        if (node.x == currentPos) {
+          multiplier++;
+          newPosition = currentPos + (node.width + 32);
+        }
+      });
+      if (multiplier == 1) {
+        tempPosition = currentPos;
+        return;
+      } else {
+        calculateNewPosition(deviceFrameNodes, 1, newPosition);
+      }
     }
     usePropertyMenu(items, onChange);
     return /* @__PURE__ */ figma.widget.h(DeviceRenderer, {
@@ -442,13 +467,13 @@
       locked: isLocked
     });
   }
-  var widget2, AutoLayout2, Text2, StampNode, useSyncedState, usePropertyMenu, useWidgetId, useStickableHost;
+  var widget2, AutoLayout2, Text2, useSyncedState, usePropertyMenu, useWidgetId, useStickableHost;
   var init_main = __esm({
     "src/main.tsx"() {
       init_lib();
       init_DeviceRenderer();
       ({ widget: widget2 } = figma);
-      ({ AutoLayout: AutoLayout2, Text: Text2, StampNode, useSyncedState, usePropertyMenu, useWidgetId, useStickableHost } = widget2);
+      ({ AutoLayout: AutoLayout2, Text: Text2, useSyncedState, usePropertyMenu, useWidgetId, useStickableHost } = widget2);
     }
   });
 
