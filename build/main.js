@@ -420,12 +420,14 @@
           const deviceFrameNodes = allWidgetNodes.filter((node) => {
             return node.widgetId === figma.widgetId;
           });
-          let currentPos = clone.x + clone.width + 32;
+          let currentPos = {
+            x: clone.x + clone.width + 32,
+            y: clone.y
+          };
           let multiplier = 1;
           calculateNewPosition(deviceFrameNodes, multiplier, currentPos);
           let spawnPosition = tempPosition;
-          console.log(spawnPosition);
-          clone.x = spawnPosition;
+          clone.x = spawnPosition.x;
           resolve();
         }
         if (propertyName == "stickDrawings") {
@@ -441,17 +443,22 @@
         }
       });
     }
-    var tempPosition;
+    var tempPosition = { x: 0, y: 0 };
     function calculateNewPosition(deviceFrameNodes, multiplier, currentPos) {
-      let newPosition;
+      let newPosition = {
+        x: 0,
+        y: 0
+      };
       deviceFrameNodes.forEach((node) => {
-        if (node.x == currentPos) {
+        if (node.x == currentPos.x && node.y == currentPos.y) {
           multiplier++;
-          newPosition = currentPos + (node.width + 32);
+          newPosition.x = currentPos.x + (node.width + 32);
+          newPosition.y = currentPos.y;
         }
       });
       if (multiplier == 1) {
-        tempPosition = currentPos;
+        tempPosition.x = currentPos.x;
+        tempPosition.y = currentPos.y;
         return;
       } else {
         calculateNewPosition(deviceFrameNodes, 1, newPosition);

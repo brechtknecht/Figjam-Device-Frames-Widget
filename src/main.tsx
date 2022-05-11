@@ -199,15 +199,17 @@ function DeviceFrames () {
           return node.widgetId === figma.widgetId
         })
 
-        let currentPos = clone.x + clone.width + 32
+        let currentPos = {
+          x : clone.x + clone.width + 32,
+          y : clone.y
+        }
+
         let multiplier = 1
 
         calculateNewPosition(deviceFrameNodes, multiplier, currentPos)
         let spawnPosition = tempPosition
 
-        console.log(spawnPosition)
-
-        clone.x = spawnPosition
+        clone.x = spawnPosition.x
 
         resolve();
       }
@@ -235,18 +237,22 @@ function DeviceFrames () {
     })
   }
 
-  var tempPosition : any;
-  function calculateNewPosition(deviceFrameNodes : WidgetNode[], multiplier : any, currentPos : any) {
-    let newPosition : any
-    deviceFrameNodes.forEach((node: { x: Number, width: any }) => {
-      if(node.x == currentPos) { 
+  var tempPosition = {x: 0, y: 0}
+  function calculateNewPosition(deviceFrameNodes : WidgetNode[], multiplier : any, currentPos : {x : any, y: any}) {
+    let newPosition = {
+      x : 0, y: 0
+    }
+    deviceFrameNodes.forEach((node: { x: Number, y: Number, width: any }) => {
+      if(node.x == currentPos.x && node.y == currentPos.y) { 
         multiplier++
-        newPosition = currentPos + (node.width + 32) 
+        newPosition.x = currentPos.x + (node.width + 32) 
+        newPosition.y = currentPos.y
       }
     })
 
     if(multiplier == 1) {
-      tempPosition = currentPos 
+      tempPosition.x = currentPos.x
+      tempPosition.y = currentPos.y
       return
     }
     else {
